@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'tekoregular', sans-serif;
+    text-decoration: none;
 }
 
 html, body{
@@ -156,7 +157,7 @@ html, body{
 }
 
 .history-container{
-
+    
     .history-bgimage{
         background-position: center;
         background-size: cover;
@@ -186,6 +187,10 @@ html, body{
             font-size: 20px;
 
         }
+    }
+
+    .spacing{
+        height: 0;
     }
 
 }
@@ -243,7 +248,6 @@ html, body{
                 font-size: 10px;
             } 
         }
-
     }
 
     .locations-icons-header{
@@ -340,6 +344,9 @@ html, body{
         &.bg-image-vienna{
             background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(../img/Backgrounds/Locations/Vienna-background.jpg);
         }
+    }
+    .spacing{
+        height: 0;
     }
 }
 
@@ -477,6 +484,10 @@ html, body{
                 }
             }
         }
+    }
+
+    .spacing{
+        height: 0;
     }
 }
 
@@ -715,6 +726,10 @@ html, body{
 
         }
     }
+
+    .spacing{
+        height: 0;
+    }
 }
 
 .employees-container{
@@ -876,10 +891,18 @@ html, body{
             h1{
                font-size: 40px;
             }
-            .job-offer-text{
 
+            .job-offer-text{
+                background-size: 100%;
                 width: 60vw;
+                height: 100%;
                 margin-top: 5vh;
+                // img{
+                //     height: 100%;
+                //     width: 100%;
+                //     z-index: -1;
+                //     margin-bottom: -20vh;
+                // }
                 p{
                     font-size: 25px;
                 }
@@ -1205,4 +1228,3 @@ html, body{
 
     }
 }
-

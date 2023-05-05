@@ -67,7 +67,7 @@
 
     <div class="social-media-icons icon">
         <a class="hover-element-link" href="https://facebook.com/"><img src="../img/icons/Social Media Icons/facebook.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://github.com/"><img src="../img/icons/Social Media Icons/github.png" alt="Error"></a>
+        <a class="hover-element-link" href="https://github.com/balljul/TECHBIRD-HOMEPAGE"><img src="../img/icons/Social Media Icons/github.png" alt="Error"></a>
         <a class="hover-element-link" href="https://linkedin.com/"><img src="../img/icons/Social Media Icons/linkedin.png" alt="Error"></a>
         <a class="hover-element-link" href="https://telegram.com/"><img src="../img/icons/Social Media Icons/telegram.png" alt="Error"></a>
         <a class="hover-element-link" href="https://twitter.com/"><img src="../img/icons/Social Media Icons/twitter.png" alt="Error"></a>
@@ -87,8 +87,11 @@
             </p></div>
         </h2>
 
-
     </div>
+
+    <?php
+      include 'footer.php';
+    ?>
 
 </body>
 </html>

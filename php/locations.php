@@ -234,6 +234,9 @@
         <p class="center text-center text-persiangreen"><?php echo retrieveText($TECHBRID_LOCATIONS_VIENNA_TEXT); ?></p>
     </div>
 
+    <?php
+        include 'footer.php';
+    ?>
 </div>
 
 

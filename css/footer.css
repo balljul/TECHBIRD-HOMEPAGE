@@ -1,0 +1,38 @@
+.spacing {
+  height: 20vh;
+}
+.footer-container {
+  background-color: #004651;
+  height: 70vh;
+  width: 100vw;
+}
+.footer-container .footer-logo {
+  padding-top: 3vh;
+  margin-bottom: -1vh;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .footer-logo img {
+  height: 20vh;
+  width: auto;
+}
+.footer-container .footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3vh;
+  height: 10vh;
+}
+.footer-container .footer-socials img {
+  margin-right: 16.5px;
+  margin-left: 16.5px;
+}
+.footer-container .footer-links p {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.footer-container .heading {
+  font-size: 50px;
+}

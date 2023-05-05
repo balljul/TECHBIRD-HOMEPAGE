@@ -88,8 +88,8 @@
             <div class="job-offer">
               <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['jobimage']); ?>" alt="Error">
               <div class="job-offer-text text-center center ">
+                <!-- <img src="../img/Backgrounds/joboffers/bg.svg" alt=""> -->
                 <h1 class="text-persiangreen"><?php echo $row["jobname$joblang"] ?> <span class="text-sherpablue">|</span> <span class="text-ripelemon"><?php echo $mwdText; ?></span></h1>
-                <!-- <div class="triangle"></div> -->
                 <p><?php echo $row["employment$joblang"] ?></p>
                 <p><?php echo $row["description$joblang"] ?></p>
                 <button><a href="job-entry.php"><p>Join Us</p></a></button>
@@ -118,5 +118,8 @@
 
   </div>
 
+<?php
+  include 'footer.php';
+?>
 </body>
 </html>

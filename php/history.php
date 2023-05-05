@@ -73,7 +73,7 @@
     <div class="history-container">
         <div class="history-bgimage" style="background-image: url(../img/Headers/History-Header.svg)" ></div>
        
-        <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/6.png)" >
+        <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/History/6.png)" >
             <section class="text-center">
                 <h1 class="heading text-persiangreen">1995</h1>
                 <h2 class="text-yellowgreen"><?php echo retrieveText($TECHBIRD_HISTORY_1995_H2); ?></h2>
@@ -82,7 +82,7 @@
             </section>
         </div>
 
-        <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/7.png)" >
+        <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/History/7.png)" >
             <section class="text-center">
                 <h1 class="heading text-light">2005</h1>
                 <h2 class="text-sherpablue"><?php echo retrieveText($TECHBIRD_HISTORY_2005_H2); ?></h2>
@@ -91,7 +91,7 @@
             </section>
         </div>
 
-        <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/8.png)" >
+        <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/History/8.png)" >
             <section class="text-center">
                 <h1 class="heading text-sherpablue">2015</h1>
                 <h2 class="text-persiangreen"><?php echo retrieveText($TECHBIRD_HISTORY_2015_H2); ?></h2>
@@ -100,7 +100,7 @@
             </section>
         </div>
 
-        <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/6.png)" >
+        <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/History/6.png)" >
             <section class="text-center">
                 <h1 class="heading text-yellowgreen">2025</h1>
                 <h2 class="text-persiangreen"><?php echo retrieveText($TECHBIRD_HISTORY_2025_H2); ?></h2>
@@ -108,7 +108,12 @@
                 <p class="text-light"><?php echo retrieveText($TECHBIRD_HISTORY_2025_TEXT_01); ?></br><?php echo retrieveText($TECHBIRD_HISTORY_2025_TEXT_02); ?></p>
             </section>
         </div>
+
+        <?php
+            include 'footer.php';
+        ?>  
     </div>
+
 
 </body>
 </html>
