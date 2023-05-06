@@ -10,7 +10,6 @@ function retrieveText($sql){
         return $text[$_SESSION['lang']];
     }
     
-    $conn->die;
 }
 
 ?> 

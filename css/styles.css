@@ -54,7 +54,7 @@ body {
   color: #0077B5;
 }
 .text-persiangreen {
-  color: #00A181;
+  color: #00a181;
 }
 .text-sherpablue {
   color: #004651;
@@ -946,7 +946,7 @@ body {
   justify-content: center;
 }
 .jobs-container .job-offers-container .job-offer {
-  border-bottom: dotted 2px #00A181;
+  border-bottom: dotted 2px #00a181;
   padding-top: 5vh;
   padding-bottom: 5vh;
   width: 100vw;
@@ -1057,7 +1057,7 @@ body {
   text-align: center;
   outline: none;
   background-color: #f4f4f4;
-  border: solid 4px #00A181;
+  border: solid 4px #00a181;
 }
 @media (min-width: 1400px) {
   .job-entry-container form input[type=text],
@@ -1273,7 +1273,7 @@ body {
 .customer-contact-container form select {
   outline: none;
   background-color: #f4f4f4;
-  border: solid 4px #00A181;
+  border: solid 4px #00a181;
 }
 @media (min-width: 1400px) {
   .job-entry-container form select,
@@ -1378,7 +1378,7 @@ body {
   margin-top: 5vh;
   margin-bottom: 5vh;
   background-color: #f4f4f4;
-  border: solid 4px #00A181;
+  border: solid 4px #00a181;
 }
 @media (min-width: 1400px) {
   .job-entry-container form button,
@@ -1496,9 +1496,20 @@ body {
   font-size: 25px;
   width: 10vw;
   height: 4vh;
-  border: solid 3px #00A181;
+  border: solid 3px #00a181;
   background-color: #f4f4f4;
 }
 .admin-panel .job-offers-container {
   width: 50vw;
+}
+.imprint-container,
+.copyright-container,
+.contact-infos-container {
+  font-size: 30px;
+}
+.imprint-container .heading-2,
+.copyright-container .heading-2,
+.contact-infos-container .heading-2 {
+  font-size: 200%;
+  color: #00a181;
 }

@@ -1,5 +1,5 @@
 <?php
-  require 'sessionStart.php';
+    require 'sessionStart.php';
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +36,7 @@
                                                                                 
                                                                                 
                                                                                 
-                                                                                                                                                                               
+                                                                                                                                                                                  
 ====================================================
 --------------------------------------------------->
 <html lang="en">
@@ -46,52 +46,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
-    <title>Social Media</title>
+    <title>Contact</title>
 </head>
-<body class="sm-container bg-light">
-     <?php 
-     include 'navbar.php'; 
-
-     $TECHBIRD_SOCIAL_MEDIA_TITLE  = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_SOCIAL_MEDIA_TITLE'";
-     $TECHBIRD_SOCIAL_MEDIA_CONTENT01_H1  = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_SOCIAL_MEDIA_CONTENT01_H1'";
-     $TECHBIRD_SOCIAL_MEDIA_CONTENT01_H2  = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_SOCIAL_MEDIA_CONTENT01_H2'";
-     $TECHBIRD_SOCIAL_MEDIA_CONTENT01_TEXT  = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_SOCIAL_MEDIA_CONTENT01_TEXT'";
+<body class="contact-infos-container">
+    
+    <?php
+    include 'navbar.php';
+        $TECHBIRD_CONTACT_INFOS_TITLE = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_CONTACT_INFOS_TITLE'";
+        $Techbird = '<span class="text-sherpablue"> TECHBIRD </span>';
     ?>
 
-    
-    <div class="heading text-center center entry-text"><h1>
-        <span><span class="text-youtube-red">Youtube, </span><span class="text-facebook-blue">Facebook, </span><span class="text-linkedin-blue">Linkedin</span></span>
-        <br/>
-        <span class="text-ripelemon"><?php echo retrieveText($TECHBIRD_SOCIAL_MEDIA_TITLE); ?></span>
-    </h1></div>
+    <h1 class="heading text-uppercase text-center center text-sherpablue"><?php echo retrieveText($TECHBIRD_CONTACT_INFOS_TITLE); ?></h1>
 
-    <div class="social-media-icons icon">
-        <a class="hover-element-link" href="https://facebook.com/"><img src="../img/icons/Social Media Icons/facebook.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://github.com/balljul/TECHBIRD-HOMEPAGE"><img src="../img/icons/Social Media Icons/github.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://linkedin.com/"><img src="../img/icons/Social Media Icons/linkedin.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://telegram.com/"><img src="../img/icons/Social Media Icons/instagram.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://twitter.com/"><img src="../img/icons/Social Media Icons/twitter.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://youtube.com/"><img src="../img/icons/Social Media Icons/youtube.png" alt="Error"></a>
-    </div>
+    <div class="contact-infos-text center text-center">
+        
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> Generally</h2>
+        <br>
+        <p>office@techbird.at</p>
+        <br>
+        <p>support@techbird.at</p>
+        <br>
+        <p>copyright@techbird.at</p>
+        <br><br>
 
-    <div class="sm-text full-height bg-social-media-text bg-image">
-        <h1 class="heading-2 text-uppercase center text-center">
-            <span class="text-ripelemon"><?php echo retrieveText($TECHBIRD_SOCIAL_MEDIA_CONTENT01_H1); ?></span>
-            <br/>
-            <span class="text-light"><?php echo retrieveText($TECHBIRD_SOCIAL_MEDIA_CONTENT01_H2); ?></span>
-        </h1>
-        <h2 class="sm-text-subtext-with-icon-nextToIt">
-            <div class="icon"><img src="../img/icons/Social Media Icons/social-media-illustration.png" alt="Error"></div>
-            <div class="text-light text text-center"><p>
-            <?php echo retrieveText($TECHBIRD_SOCIAL_MEDIA_CONTENT01_TEXT); ?>
-            </p></div>
-        </h2>
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> Barcelona</h2>
+        <br>
+        <p>+34 93 123 45 67</p>
+        <br>
+        <p>Barcelona@techbird.at</p>
+        <br><br>
 
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> Berlin</h2>
+        <br>
+        <p>+49 30 12345678</p>
+        <br>
+        <p>Berlin@techbird.at</p>
+        <br><br>
+
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> Bern</h2>
+        <br>
+        <p>+41 31 9876543</p>
+        <br>
+        <p>Bern@techbird.at</p>
+        <br><br>
+
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> Brussels</h2>
+        <br>
+        <p>+32 2 345 6789</p>
+        <br>
+        <p>Brussels@techbird.at</p>
+        <br><br>
+
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> Helsinki</h2>
+        <br>
+        <p>+358 9 1234567</p>
+        <br>
+        <p>Helsinki@techbird.at</p>
+        <br><br>
+
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> Lisbon</h2>
+        <br>
+        <p>+351 21 987 6543</p>
+        <br>
+        <p>Lisbon@techbird.at</p>
+        <br><br>
+
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> London</h2>
+        <br>
+        <p>+44 20 7123 4567</p>
+        <br>
+        <p>London@techbird.at</p>
+        <br><br>
+
+        <h2 class="heading-2 text-persiangreen"><?php echo $Techbird ?> Roma</h2>
+        <br>
+        <p>+39 06 9876 5432</p>
+        <br>
+        <p>Roma@techbird.at</p>
+        <br><br>
     </div>
 
     <?php
-      include 'footer.php';
+        include 'footer.php';
     ?>
-
 </body>
 </html>

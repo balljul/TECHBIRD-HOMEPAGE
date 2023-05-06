@@ -1,5 +1,5 @@
 <?php
-  require 'sessionStart.php';
+    require 'sessionStart.php';
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +36,7 @@
                                                                                 
                                                                                 
                                                                                 
-                                                                                                                                                                               
+                                                                                                                                                                                  
 ====================================================
 --------------------------------------------------->
 <html lang="en">
@@ -46,52 +46,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
-    <title>Social Media</title>
+    <title>Imprint</title>
 </head>
-<body class="sm-container bg-light">
-     <?php 
-     include 'navbar.php'; 
+<body class="imprint-container bg-light">
 
-     $TECHBIRD_SOCIAL_MEDIA_TITLE  = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_SOCIAL_MEDIA_TITLE'";
-     $TECHBIRD_SOCIAL_MEDIA_CONTENT01_H1  = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_SOCIAL_MEDIA_CONTENT01_H1'";
-     $TECHBIRD_SOCIAL_MEDIA_CONTENT01_H2  = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_SOCIAL_MEDIA_CONTENT01_H2'";
-     $TECHBIRD_SOCIAL_MEDIA_CONTENT01_TEXT  = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_SOCIAL_MEDIA_CONTENT01_TEXT'";
-    ?>
+<?php
+    include 'navbar.php';
 
+    $TECHBIRD_IMPRINT_TITLE = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_IMPRINT_TITLE'";
+?>
+<h1 class="heading text-uppercase text-persiangreen text-center center"><?php echo retrieveText($TECHBIRD_IMPRINT_TITLE); ?></h1>
+
+<p class="imprint-text text-center center">
     
-    <div class="heading text-center center entry-text"><h1>
-        <span><span class="text-youtube-red">Youtube, </span><span class="text-facebook-blue">Facebook, </span><span class="text-linkedin-blue">Linkedin</span></span>
-        <br/>
-        <span class="text-ripelemon"><?php echo retrieveText($TECHBIRD_SOCIAL_MEDIA_TITLE); ?></span>
-    </h1></div>
+    <span>Angaben gemäß  Informationspflicht laut §5 E-Commerce Gesetz, §14  Unternehmensgesetzbuch, §63  Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</span>
+    <br>
+    <br>
+    <span>
+        <span>TECHBIRD</span>
+        <br>
+        <span>RINGSTRAßE 199,</span>
+        <br>
+        <span>1010 Wien, Innere Stadt</span>
+    </span>
+    <br>
+    <br>
+    <span>
+        <span class="text-persiangreen">Unternehmensgegenstand:</span>
+        <span>IT-Dienstleistungen</span>
+        <br>
+        <span class="text-persiangreen">UID-Nummer: </span>
+        <span>ATU12345678</span>
+        <br>
+        <span>GLN: 128973562</span>
+        <br>
+        <span>GISA: 56836294</span>
+        <br>
+        <span>Firmenbuchnummer: </span>
+        <br>
+        <span>Firmenbuchgericht:</span>
+        <br>
+        <span>Firmensitz:</span>
+    </span>
+    <br>
+    <br>
+    <span>
+        <span>Tel.: +43 660 6149774</span>
+        <br>
+        <span>Fax.: 6238 / 23847</span>
+        <br>
+        <span>E-Mail: office@techbird.at</span>
+    </span>
+    <br>
+    <br>
+    <span>
+        <span>Geschäftsführung: Julius Ball </span>
+        <br>
+        <span>Datenschutzverantwortlicher: Samuel Seebacher</span>
+    </span>
 
-    <div class="social-media-icons icon">
-        <a class="hover-element-link" href="https://facebook.com/"><img src="../img/icons/Social Media Icons/facebook.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://github.com/balljul/TECHBIRD-HOMEPAGE"><img src="../img/icons/Social Media Icons/github.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://linkedin.com/"><img src="../img/icons/Social Media Icons/linkedin.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://telegram.com/"><img src="../img/icons/Social Media Icons/instagram.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://twitter.com/"><img src="../img/icons/Social Media Icons/twitter.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://youtube.com/"><img src="../img/icons/Social Media Icons/youtube.png" alt="Error"></a>
-    </div>
+</p>
 
-    <div class="sm-text full-height bg-social-media-text bg-image">
-        <h1 class="heading-2 text-uppercase center text-center">
-            <span class="text-ripelemon"><?php echo retrieveText($TECHBIRD_SOCIAL_MEDIA_CONTENT01_H1); ?></span>
-            <br/>
-            <span class="text-light"><?php echo retrieveText($TECHBIRD_SOCIAL_MEDIA_CONTENT01_H2); ?></span>
-        </h1>
-        <h2 class="sm-text-subtext-with-icon-nextToIt">
-            <div class="icon"><img src="../img/icons/Social Media Icons/social-media-illustration.png" alt="Error"></div>
-            <div class="text-light text text-center"><p>
-            <?php echo retrieveText($TECHBIRD_SOCIAL_MEDIA_CONTENT01_TEXT); ?>
-            </p></div>
-        </h2>
-
-    </div>
-
-    <?php
-      include 'footer.php';
-    ?>
-
+<?php
+    include 'footer.php';
+?>
 </body>
 </html>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 03. Mai 2023 um 16:48
+-- Erstellungszeit: 05. Mai 2023 um 23:23
 -- Server-Version: 10.4.25-MariaDB
 -- PHP-Version: 8.1.10
 
@@ -114,7 +114,8 @@ INSERT INTO `job-applications` (`fname`, `lname`, `department`, `application`, `
 ('Julius', 'Ball', 'it', '', 'LEAD 001', 'juliusball197@gmail.com', 'https://techbird.com/', '06606149774', 9, 0),
 ('Julius', 'Ball', 'it', '', 'LEAD 001', 'juliusball197@gmail.com', 'https://techbird.com/', '06606149774', 10, 0),
 ('Julius', 'Ball', 'it', '', 'LEAD 001', 'juliusball197@gmail.com', 'https://techbird.com/', '06606149774', 11, 0),
-('Julius', 'Ball', 'marketing', '', '', 'juliusball197@gmail.com', '', '06606149774', 12, 1);
+('Julius', 'Ball', 'marketing', '', '', 'juliusball197@gmail.com', '', '06606149774', 12, 1),
+('Julius', 'Ball', 'marketing', 0x54656b6f2d426f6c642e747466, '', 'juliusball197@gmail.com', '', '06606149774', 13, 0);
 
 -- --------------------------------------------------------
 
@@ -233,7 +234,14 @@ INSERT INTO `texts` (`textkey`, `en`, `de`, `it`, `Page`, `ID`) VALUES
 ('TECHBIRD_ADMIN_PANEL_UNSEEN_APPLICATIONS_SHOW_MORE', 'Show all Applications', 'Alle Bewerbungen anzeigen\r\n', 'Mostra tutte le applicazioni\r\n', 'ADMIN PANEL', 64),
 ('TECHBIRD_ADMIN_PANEL_APPLICATIONS_APLLYING_TEXT', ' applying for ', ' bewirbt sich für  ', ' fare domanda per ', 'ADMIN PANEL', 65),
 ('TECHBIRD_ADMIN_PANEL_SEEN_APPLICATIONS_TITLE', ' already seen applications', ' bereits gesehene Bewerbungen', ' applicazioni già viste\r\n', 'ADMIN PANEL', 66),
-('TECHBIRD_ADMIN_PANEL_SEEN_APPLICATIONS_SHOW_LESS', 'Hide seen Applications', 'Gesehene Bewerbungen verstecken', 'Nascondi le applicazioni viste\r\n', 'ADMIN PANEL', 67);
+('TECHBIRD_ADMIN_PANEL_SEEN_APPLICATIONS_SHOW_LESS', 'Hide seen Applications', 'Gesehene Bewerbungen verstecken', 'Nascondi le applicazioni viste\r\n', 'ADMIN PANEL', 67),
+('TECHBIRD_FOOTER_IMPRINT_TEXT', 'Imprint', 'Impressum', 'impronta', 'FOOTER', 68),
+('TECHBIRD_FOOTER_COPRIGHT_TEXT', 'Copyright', 'Datenschutz', 'protezione dati', 'FOOTER', 69),
+('TECHBIRD_FOOTER_CONTACT_TEXT', 'Contact', 'Kontakt', 'Contatto', 'FOOTER', 70),
+('TECHBIRD_FOOTER_PROJECT_RESOURCES_TEXT', 'Project Resources', 'Projekt Resourcen', 'Risorse del progetto', 'FOOTER', 71),
+('TECHBIRD_IMPRINT_TITLE', 'Imprint', 'Impressum', 'impronta', 'IMPRINT', 72),
+('TECHBIRD_COPYRIGHT_TITLE', 'Copyright', 'Datenschutz', 'Diritto d\'autore\r\n', 'COPYRIGHT', 73),
+('TECHBIRD_CONTACT_INFOS_TITLE', 'Contact', 'Kontakt', 'contatto', 'CONTACT INFOS', 74);
 
 --
 -- Indizes der exportierten Tabellen
@@ -301,7 +309,7 @@ ALTER TABLE `employees`
 -- AUTO_INCREMENT für Tabelle `job-applications`
 --
 ALTER TABLE `job-applications`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT für Tabelle `jobs`
@@ -313,7 +321,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT für Tabelle `texts`
 --
 ALTER TABLE `texts`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
