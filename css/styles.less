@@ -23,7 +23,7 @@ html, body{
 
 .heading-2{
     font-size: 400%;
-    width: 100%;
+    // width: 100%;
     font-family: 'tekosemibold';    
 }
 
@@ -466,6 +466,8 @@ html, body{
                     } 
                 }
             }
+
+          
         }
     }
 
@@ -482,6 +484,16 @@ html, body{
                     width: 64px;
                     height: auto;
                 }
+            }
+
+            .customer-contact-button{
+                margin-top: 4vh;
+                width: 10vw;
+                height: 6vh;
+                outline: none;
+                border: solid @persiangreen 4px;
+                background-color: @sherpablue;
+                font-size: 40px;
             }
         }
     }
@@ -855,377 +867,331 @@ html, body{
     .job-offers-container{
         margin: 0;
         padding: 0;
-        margin-bottom: 10vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; 
+
 
         .job-offer{
-            border-bottom: dotted 2px @persiangreen;
-            padding-top: 5vh;
-            padding-bottom: 5vh;
+            background-size: cover;
+            background-position: center;
             width: 100vw;
-            @media (min-width: 993px){
-                display: flex;
-            }
-            @media(min-width: 0px) and (max-width: 993px){
-                display: block;
-            }
+            height: 55vh;
             
-            .triangle{
-                width: 0;
-                height: 0;
-                border-left: 20vw solid transparent;
-                border-right: 20vw solid transparent;
-                border-top: 40vw solid #555;
-            }
-
-            img{
-                @media (min-width: 993px){
-                    width: 40vw;
-                }
-                @media(min-width: 0px) and (max-width: 993px){
-                    width: 100vw;
-                }      
-            }
-            h1{
-               font-size: 40px;
-            }
-
-            .job-offer-text{
-                background-size: 100%;
+            .text-right{
                 width: 60vw;
-                height: 100%;
-                margin-top: 5vh;
-                // img{
-                //     height: 100%;
-                //     width: 100%;
-                //     z-index: -1;
-                //     margin-bottom: -20vh;
-                // }
-                p{
-                    font-size: 25px;
-                }
+                margin-left: 40vw;
+
             }
 
-            button{
-                width: 100px;
-                height: 50px;
-                bottom: 0;
-                p{
-                    font-size: 20px;
+            .text-left{
+                width: 60vw;
+                margin-right: 40vw;
+            }
+
+            .text-left, .text-right{
+                padding-top: 2vh;
+                .heading-2{
+                    font-size: 300%;
+                }
+                .job-entry-button{
+                    margin-top: 3vh;
+                    width: 10vw;
+                    height: 5vh;
+                    font-size: 25px;
+                    outline: none;
+                    border: solid @persiangreen 3px;
+
+                    &.element3,&.element4{
+                        border: solid @yellowgreen 3px;
+                    }
+                }
+
+                .jobdescription{
+                    font-size: 180%;
                 }
             }
+           
         }
+
     }
 }
 
 .job-entry-container,.customer-contact-container{
     form{
-
-        label{
-            margin-top: 10vh;
-            @media (min-width: 1400px){
-                font-size: 60px;
-            }
-            @media(min-width: 1200px) and (max-width: 1399px){
-                font-size: 60px;
-            }
-            @media(min-width: 992px) and (max-width: 1199px){
-                font-size: 50px;
-            }
-            @media(min-width: 768px) and (max-width: 991px){
-                font-size: 50px;
-            }
-            @media(min-width: 576px) and (max-width: 767px){
-                font-size: 40px;
-            }
-            @media(min-width: 321px) and (max-width: 575px){
-                font-size: 30px;
-            }
-            @media(min-width: 0px) and (max-width: 320px){
-                font-size: 30px;
-            }  
-        }
-
-
-        input[type=text], input[type=tel],input[type=url],input[type=file],textarea{
-            text-align: center;
-            outline: none;
-            background-color: @wildsand;
-            border: solid 4px @persiangreen;
-
-            @media (min-width: 1400px){
-                font-size: 40px;
-                width: 30vw;
-                height: 10vh;
-                transition: width 0.4s ease-in-out;
-
-                &:focus{
-                    width: 60vw;
-                    height: 10vh;
+        &.contact-form{
+            label{
+                margin-top: 10vh;
+                @media (min-width: 1400px){
+                    font-size: 60px;
                 }
-            }
-            @media(min-width: 1200px) and (max-width: 1399px){
-                font-size: 40px;
-                width: 30vw;
-                height: 10vh;
-                transition: width 0.4s ease-in-out;
-
-                &:focus{
-                    width: 60vw;
-                    height: 10vh;
+                @media(min-width: 1200px) and (max-width: 1399px){
+                    font-size: 60px;
                 }
+                @media(min-width: 992px) and (max-width: 1199px){
+                    font-size: 50px;
+                }
+                @media(min-width: 768px) and (max-width: 991px){
+                    font-size: 50px;
+                }
+                @media(min-width: 576px) and (max-width: 767px){
+                    font-size: 40px;
+                }
+                @media(min-width: 321px) and (max-width: 575px){
+                    font-size: 30px;
+                }
+                @media(min-width: 0px) and (max-width: 320px){
+                    font-size: 30px;
+                }  
             }
-            @media(min-width: 992px) and (max-width: 1199px){
-                font-size: 30px;
-                width: 20vw;
-                height: 8vh;
-                transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 40vw;
+
+            input[type=text], input[type=tel],input[type=url],input[type=file],textarea{
+                text-align: center;
+                outline: none;
+                background-color: @wildsand;
+                border: solid 4px @persiangreen;
+
+                @media (min-width: 1400px){
+                    font-size: 40px;
+                    width: 30vw;
+                    height: 10vh;
+                    transition: width 0.4s ease-in-out;
+
+                    &:focus{
+                        width: 60vw;
+                        height: 10vh;
+                    }
+                }
+                @media(min-width: 1200px) and (max-width: 1399px){
+                    font-size: 40px;
+                    width: 30vw;
+                    height: 10vh;
+                    transition: width 0.4s ease-in-out;
+
+                    &:focus{
+                        width: 60vw;
+                        height: 10vh;
+                    }
+                }
+                @media(min-width: 992px) and (max-width: 1199px){
+                    font-size: 30px;
+                    width: 20vw;
                     height: 8vh;
+                    transition: width 0.4s ease-in-out;
+
+                    &:focus{
+                        width: 40vw;
+                        height: 8vh;
+                    }
+
                 }
-
-            }
-            @media(min-width: 768px) and (max-width: 991px){
-                font-size: 25px;
-                width: 20vw;
-                height: 6vh;
-                transition: width 0.4s ease-in-out;
-
-                &:focus{
-                    width: 40vw;
+                @media(min-width: 768px) and (max-width: 991px){
+                    font-size: 25px;
+                    width: 20vw;
                     height: 6vh;
-                }
-            }
-            @media(min-width: 576px) and (max-width: 767px){
-                font-size: 25px;
-                width: 20vw;
-                height: 6vh;
-                transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 40vw;
+                    &:focus{
+                        width: 40vw;
+                        height: 6vh;
+                    }
+                }
+                @media(min-width: 576px) and (max-width: 767px){
+                    font-size: 25px;
+                    width: 20vw;
                     height: 6vh;
-                }
-            }
-            @media(min-width: 321px) and (max-width: 575px){
-                font-size: 20px;
-                width: 25vw;
-                height: 5vh;
-                transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 50vw;
+                    &:focus{
+                        width: 40vw;
+                        height: 6vh;
+                    }
+                }
+                @media(min-width: 321px) and (max-width: 575px){
+                    font-size: 20px;
+                    width: 25vw;
                     height: 5vh;
-                }          
-            }
-            @media(min-width: 0px) and (max-width: 320px){
-                font-size: 20px;
-                width: 25vw;
-                height: 5vh;
-                transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 50vw;
+                    &:focus{
+                        width: 50vw;
+                        height: 5vh;
+                    }          
+                }
+                @media(min-width: 0px) and (max-width: 320px){
+                    font-size: 20px;
+                    width: 25vw;
                     height: 5vh;
-                }   
-            }
+                    transition: width 0.4s ease-in-out;
 
-        }
-
-        select{
-            outline: none;
-            background-color: @wildsand;
-            border: solid 4px @persiangreen;
-           
-            @media (min-width: 1400px){
-                font-size: 40px;
-                width: 30vw;
-                height: 10vh;
-                transition: width 0.4s ease-in-out;
-
-                &:focus{
-                    width: 60vw;
-                    height: 10vh;
+                    &:focus{
+                        width: 50vw;
+                        height: 5vh;
+                    }   
                 }
-            }
-            @media(min-width: 1200px) and (max-width: 1399px){
-                font-size: 40px;
-                width: 30vw;
-                height: 10vh;
-                transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 60vw;
+            }
+
+            select{
+                outline: none;
+                background-color: @wildsand;
+                border: solid 4px @persiangreen;
+            
+                @media (min-width: 1400px){
+                    font-size: 40px;
+                    width: 30vw;
                     height: 10vh;
-                }
-            }
-            @media(min-width: 992px) and (max-width: 1199px){
-                font-size: 30px;
-                width: 20vw;
-                height: 8vh;
-                transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 40vw;
+                    &:focus{
+                        width: 60vw;
+                        height: 10vh;
+                    }
+                }
+                @media(min-width: 1200px) and (max-width: 1399px){
+                    font-size: 40px;
+                    width: 30vw;
+                    height: 10vh;
+                    transition: width 0.4s ease-in-out;
+
+                    &:focus{
+                        width: 60vw;
+                        height: 10vh;
+                    }
+                }
+                @media(min-width: 992px) and (max-width: 1199px){
+                    font-size: 30px;
+                    width: 20vw;
                     height: 8vh;
-                }
-               }
-            @media(min-width: 768px) and (max-width: 991px){
-                font-size: 25px;
-                width: 20vw;
-                height: 6vh;
-                transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 40vw;
+                    &:focus{
+                        width: 40vw;
+                        height: 8vh;
+                    }
+                }
+                @media(min-width: 768px) and (max-width: 991px){
+                    font-size: 25px;
+                    width: 20vw;
                     height: 6vh;
-                }
-            }
-            @media(min-width: 576px) and (max-width: 767px){
-                font-size: 25px;
-                width: 20vw;
-                height: 6vh;
-                transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 50vw;
+                    &:focus{
+                        width: 40vw;
+                        height: 6vh;
+                    }
+                }
+                @media(min-width: 576px) and (max-width: 767px){
+                    font-size: 25px;
+                    width: 20vw;
                     height: 6vh;
+                    transition: width 0.4s ease-in-out;
+
+                    &:focus{
+                        width: 50vw;
+                        height: 6vh;
+                    }
+                }
+                @media(min-width: 321px) and (max-width: 575px){
+                    font-size: 20px;
+                    width: 25vw;
+                    height: 5vh;  
+                    transition: width 0.4s ease-in-out;
+
+                    &:focus{
+                        width: 50vw;
+                        height: 5vh;
+                    }       
+                }
+                @media(min-width: 0px) and (max-width: 320px){
+                    font-size: 15px;
+                    width: 25vw;
+                    height: 5vh;
+                    transition: width 0.4s ease-in-out;
+
+                    &:focus{
+                        width: 60vw;
+                        height: 5vh;
+                    }
+                }
+
+            
+            }
+
+            button{
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                background-color: @wildsand;
+                border: solid 4px @persiangreen;
+                @media (min-width: 1400px){
+                    font-size: 40px;
+                    width: 30vw;
+                    height: 10vh;
+                
+                }
+                @media(min-width: 1200px) and (max-width: 1399px){
+                    font-size: 40px;
+                    width: 30vw;
+                    height: 10vh;
+                    
+                }
+                @media(min-width: 992px) and (max-width: 1199px){
+                    font-size: 30px;
+                    width: 20vw;
+                    height: 8vh;
+                    
+
+                }
+                @media(min-width: 768px) and (max-width: 991px){
+                    font-size: 25px;
+                    width: 20vw;
+                    height: 6vh;
+                    
+                }
+                @media(min-width: 576px) and (max-width: 767px){
+                    font-size: 25px;
+                    width: 20vw;
+                    height: 6vh;
+                    
+                }
+                @media(min-width: 321px) and (max-width: 575px){
+                    font-size: 20px;
+                    width: 25vw;
+                    height: 5vh;
+                            
+                }
+                @media(min-width: 0px) and (max-width: 320px){
+                    font-size: 20px;
+                    width: 25vw;
+                    height: 5vh;
+                    
                 }
             }
-            @media(min-width: 321px) and (max-width: 575px){
-                font-size: 20px;
-                width: 25vw;
-                height: 5vh;  
-                transition: width 0.4s ease-in-out;
 
-                &:focus{
-                    width: 50vw;
-                    height: 5vh;
-                }       
+            .error{
+                    color: @youtube_red;    
+                    @media (min-width: 1400px){
+                        font-size: 30px;
+                    }
+                    @media(min-width: 1200px) and (max-width: 1399px){
+                        font-size: 30px;
+                    }
+                    @media(min-width: 992px) and (max-width: 1199px){
+                        font-size: 20px;
+                    }
+                    @media(min-width: 768px) and (max-width: 991px){
+                        font-size: 15px;
+                    }
+                    @media(min-width: 576px) and (max-width: 767px){
+                        font-size: 15px;
+                    }
+                    @media(min-width: 321px) and (max-width: 575px){
+                        font-size: 10px; 
+                    }
+                    @media(min-width: 0px) and (max-width: 320px){
+                        font-size: 10px;
+                    }
             }
-            @media(min-width: 0px) and (max-width: 320px){
-                font-size: 15px;
-                width: 25vw;
-                height: 5vh;
-                transition: width 0.4s ease-in-out;
-
-                &:focus{
-                    width: 60vw;
-                    height: 5vh;
-                }
-            }
-
-           
-        }
-
-       button{
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        background-color: @wildsand;
-        border: solid 4px @persiangreen;
-        @media (min-width: 1400px){
-            font-size: 40px;
-            width: 30vw;
-            height: 10vh;
-           
-        }
-        @media(min-width: 1200px) and (max-width: 1399px){
-            font-size: 40px;
-            width: 30vw;
-            height: 10vh;
             
         }
-        @media(min-width: 992px) and (max-width: 1199px){
-            font-size: 30px;
-            width: 20vw;
-            height: 8vh;
-            
-
-        }
-        @media(min-width: 768px) and (max-width: 991px){
-            font-size: 25px;
-            width: 20vw;
-            height: 6vh;
-            
-        }
-        @media(min-width: 576px) and (max-width: 767px){
-            font-size: 25px;
-            width: 20vw;
-            height: 6vh;
-            
-        }
-        @media(min-width: 321px) and (max-width: 575px){
-            font-size: 20px;
-            width: 25vw;
-            height: 5vh;
-                     
-        }
-        @media(min-width: 0px) and (max-width: 320px){
-            font-size: 20px;
-            width: 25vw;
-            height: 5vh;
-            
-        }
-       }
-
-
-       .error{
-            color: @youtube_red;    
-            @media (min-width: 1400px){
-                font-size: 30px;
-            }
-            @media(min-width: 1200px) and (max-width: 1399px){
-                font-size: 30px;
-            }
-            @media(min-width: 992px) and (max-width: 1199px){
-                font-size: 20px;
-            }
-            @media(min-width: 768px) and (max-width: 991px){
-                font-size: 15px;
-            }
-            @media(min-width: 576px) and (max-width: 767px){
-                font-size: 15px;
-            }
-            @media(min-width: 321px) and (max-width: 575px){
-                font-size: 10px; 
-            }
-            @media(min-width: 0px) and (max-width: 320px){
-                font-size: 10px;
-            }
-       }
-        
-    }
-}
-
-.admin-panel{
-
-    
-    .applications-container{
-        @media (min-width: 1200px){
-            width: 50vw;
-        }
-        @media (max-width: 1199px) and (min-width: 0){
-            width: 100vw;
-        }
-        input[type="submit"]{
-            font-size: 25px;
-            width: 10vw;
-            height: 4vh;
-            border: solid 3px @persiangreen;
-            background-color: @wildsand;
-        }
-
-        
-    }
-
-    .job-offers-container{
-        width: 50vw;
-
-
     }
 }
 
@@ -1238,4 +1204,125 @@ html, body{
     }
 
 }
+
+.admin-dash-overview-container{
+    width: 100vw;
+    
+    .overview-title{
+        margin-top: 3vh;
+        font-size: 100px;
+    }
+
+    .overview-content-container{
+        margin-top: 10vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        
+
+        .overview-linked-window{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 10px @yellowgreen solid;
+            width: 30vw;
+            height: 46vh;
+        }
+    }
+
+    
+}
+
+.admin-dash-applications-container, .admin-dash-job-offers-container{
+ 
+    .title{
+        font-size: 100px;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .sections-container{
+        display: flex;
+        .content-section{
+            width: 50vw;
+            height: 100vh;
+
+
+            // Background Color 
+            &.newApplications,&.markedApplications,&.currenJobOffers{
+                background-color: @yellowgreen;
+            }
+            &.seenApplications{
+                background-color: @persiangreen;
+            }
+            &.show-section{
+                background-color: @wildsand;
+            }
+
+            // Rest of the Styling
+
+            .heading{
+                margin-top: 2vh;
+            }
+
+            .application{
+                margin-left: 9vw;
+                display: flex;
+
+                form{
+                    input{
+                        display: none;
+                    }
+                    button{
+                        margin-left: 0.5vw;
+                        outline: none;
+                        border: none;
+                        background-color: @yellowgreen;
+                        img{
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+
+            .selected-application{
+               
+               .application-title{
+                    .heading{
+                    font-size: 100px;
+                    }
+
+                    .heading-2{
+                        font-size: 40px;
+                    }
+               }
+
+               .application-text{
+                margin-top: 5vh;
+                margin-left: 5vw;
+                font-size: 45px;
+               }
+
+               .applications-button-container{
+                    form{
+                        .CVbutton{
+
+                        }
+
+                        .mailbutton{
+
+                        }
+                    }
+                }
+                .icon-container{
+                    
+                }
+               
+            }
+        }
+    }
+
+}
+
 

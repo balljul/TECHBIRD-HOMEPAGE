@@ -116,9 +116,12 @@
                 <span class="icon"><img src="../img/icons/equal-icon.png" alt=""></span>
                 <br/>
                 <span class="text-uppercase text-sherpablue"><?php echo retrievetext($TECHBIRD_PARTNERS_CONTENT01_05); ?> </span>
-            </h1>
+                <br>
+                <a href="customer-contact.php">
+                <button class="customer-contact-button text-light">Contact us</button>
+                </a>
+              </h1>
         </div>
-        
 
         </div>
 

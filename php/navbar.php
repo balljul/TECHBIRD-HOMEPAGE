@@ -43,13 +43,13 @@ $TECHBIRD_LANGSWITCH_SUBMIT_BUTTON =  "SELECT * FROM `texts` WHERE `textkey` = '
 
     <div class="langSwitch">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?> ">
-            <select name="langSwitch" id="langSwitch">
+            <select class="text-sherpablue" name="langSwitch" id="langSwitch">
                 <option value="en" <?php echo $_SESSION['langSwitchSetActiveEN'] ?>>English</option>
                 <option value="de" <?php echo $_SESSION['langSwitchSetActiveDE'] ?>>Deutsch</option>
                 <option value="it" <?php echo $_SESSION['langSwitchSetActiveIT'] ?>>Italiano</option>
             </select>
 
-            <button type="submit" name="submit"><?php echo retrieveText($TECHBIRD_LANGSWITCH_SUBMIT_BUTTON); ?></button>
+            <button class="text-sherpablue" type="submit" name="submit"><?php echo retrieveText($TECHBIRD_LANGSWITCH_SUBMIT_BUTTON); ?></button>
 
         </form>
     </div>
@@ -73,10 +73,7 @@ $TECHBIRD_LANGSWITCH_SUBMIT_BUTTON =  "SELECT * FROM `texts` WHERE `textkey` = '
     </div>
 
     
-</nav>
-
-
-
+    </nav>
 
 </div>
 

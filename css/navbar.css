@@ -3,6 +3,15 @@
   padding: 0;
   overflow-x: hidden;
 }
+.nav-container .langSwitch select,
+.nav-container .langSwitch button {
+  height: 2vh;
+  width: 8vw;
+  font-size: 15px;
+  border: solid #00a181 2px;
+  outline: none;
+  background-color: #f4f4f4;
+}
 .nav-container nav.navbar {
   display: flex;
   justify-content: center;

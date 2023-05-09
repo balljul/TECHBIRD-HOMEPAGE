@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
     <title>Jobs</title>
 </head>
-<body class="jobs-container bg-light">
+<body class="jobs-container ">
     
     <?php 
     include 'navbar.php';
@@ -78,42 +78,65 @@
     else if($joblang == "it"){
       $mwdText = "m/f/d";
     }
-    foreach($results as $row){
-      
-        $count++;
 
-        // Determine if the current iteration is odd or even
-        if($count % 2 == 1){
-            ?>
-            <div class="job-offer">
-              <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['jobimage']); ?>" alt="Error">
-              <div class="job-offer-text text-center center ">
-                <!-- <img src="../img/Backgrounds/joboffers/bg.svg" alt=""> -->
-                <h1 class="text-persiangreen"><?php echo $row["jobname$joblang"] ?> <span class="text-sherpablue">|</span> <span class="text-ripelemon"><?php echo $mwdText; ?></span></h1>
-                <p><?php echo $row["employment$joblang"] ?></p>
-                <p><?php echo $row["description$joblang"] ?></p>
-                <button><a href="job-entry.php"><p>Join Us</p></a></button>
+    $count = 1;
+    $bg = '';
+    $textlr = '';
+    $textClr = '';
+
+
+    foreach($results as $row){
+      if($count == 5){
+        $count = 1;
+      }
+      else if($count == 0){
+        $count = 1;
+      }
+
+      if($count % 4 == 0){
+        $bg = 'style="background-image: url(../img/Backgrounds/joboffers/Job-BG-04.png);"';
+        $textlr = 'text-left';
+        $textClr = 'text-light';
+    
+      }
+      else if($count % 3 == 0){
+        $bg = 'style="background-image: url(../img/Backgrounds/joboffers/Job-BG-03.png);"';
+        $textlr = 'text-right';
+        $textClr = 'text-light';
+     
+      }
+      else if($count % 2 == 0){
+        $bg = 'style="background-image: url(../img/Backgrounds/joboffers/Job-BG-02.png);"';
+        $textlr = 'text-left';
+        $textClr = 'text-sherpablue';
+      
+      }
+      else if($count % 1 == 0){
+        $bg = 'style="background-image: url(../img/Backgrounds/joboffers/Job-BG-01.png);"';
+        $textlr = 'text-right';
+        $textClr = 'text-sherpablue';
+      
+      }
+            
+     
+        ?>
+
+            <div class="job-offer" <?php echo $bg; ?>>
+              <div class="<?php echo $textlr; ?> <?php echo $textClr; ?> text-center ">
+                <h1 class="text-uppercase heading "><?php echo $row["jobname$joblang"] ?> <span> | </span> <span><?php echo $mwdText; ?></span></h1>
+                <p class="heading-2"><?php echo $row["employment$joblang"]; ?></p>
+                <p class="jobdescription"><?php echo $row["description$joblang"] ?></p>
+
+                <form action="job-entry.php" >
+                  <button type="submit" class="job-entry-button <?php echo "element$count"; ?>">Join us</button>
+                </form>
               </div>
             </div>
-        <?php
-        
-        } else {
-            ?>
-            <div class="job-offer">
-            <div class="job-offer-text text-center center ">
-            <h1 class="text-persiangreen"><?php echo $row["jobname$joblang"] ?> <span class="text-sherpablue">|</span> <span class="text-ripelemon"><?php echo $mwdText; ?></span></h1>
-                <p><?php echo $row["employment$joblang"] ?></p>
-                <p><?php echo $row["description$joblang"] ?></p>
-                <button><a href="job-entry.php"><p>Join Us</p></a></button>
-              </div>
-               <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['jobimage']); ?>" alt="Error">
-            </div>
-          <?php
-        }
-    ?>
+            
 
     <?php
-    }
+      $count++;
+      }
     ?>
 
   </div>

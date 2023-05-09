@@ -18,7 +18,6 @@ body {
 }
 .heading-2 {
   font-size: 400%;
-  width: 100%;
   font-family: 'tekosemibold';
 }
 .icon img {
@@ -485,6 +484,15 @@ body {
   width: 64px;
   height: auto;
 }
+.partners-container .partners-entry-text .partners-entry-text-subcontainer .customer-contact-button {
+  margin-top: 4vh;
+  width: 10vw;
+  height: 6vh;
+  outline: none;
+  border: solid #00a181 4px;
+  background-color: #004651;
+  font-size: 40px;
+}
 .partners-container .spacing {
   height: 0;
 }
@@ -940,567 +948,531 @@ body {
 .jobs-container .job-offers-container {
   margin: 0;
   padding: 0;
-  margin-bottom: 10vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .jobs-container .job-offers-container .job-offer {
-  border-bottom: dotted 2px #00a181;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  background-size: cover;
+  background-position: center;
   width: 100vw;
+  height: 55vh;
 }
-@media (min-width: 993px) {
-  .jobs-container .job-offers-container .job-offer {
-    display: flex;
-  }
-}
-@media (min-width: 0px) and (max-width: 993px) {
-  .jobs-container .job-offers-container .job-offer {
-    display: block;
-  }
-}
-.jobs-container .job-offers-container .job-offer .triangle {
-  width: 0;
-  height: 0;
-  border-left: 20vw solid transparent;
-  border-right: 20vw solid transparent;
-  border-top: 40vw solid #555;
-}
-@media (min-width: 993px) {
-  .jobs-container .job-offers-container .job-offer img {
-    width: 40vw;
-  }
-}
-@media (min-width: 0px) and (max-width: 993px) {
-  .jobs-container .job-offers-container .job-offer img {
-    width: 100vw;
-  }
-}
-.jobs-container .job-offers-container .job-offer h1 {
-  font-size: 40px;
-}
-.jobs-container .job-offers-container .job-offer .job-offer-text {
-  background-size: 100%;
+.jobs-container .job-offers-container .job-offer .text-right {
   width: 60vw;
-  height: 100%;
-  margin-top: 5vh;
+  margin-left: 40vw;
 }
-.jobs-container .job-offers-container .job-offer .job-offer-text p {
+.jobs-container .job-offers-container .job-offer .text-left {
+  width: 60vw;
+  margin-right: 40vw;
+}
+.jobs-container .job-offers-container .job-offer .text-left,
+.jobs-container .job-offers-container .job-offer .text-right {
+  padding-top: 2vh;
+}
+.jobs-container .job-offers-container .job-offer .text-left .heading-2,
+.jobs-container .job-offers-container .job-offer .text-right .heading-2 {
+  font-size: 300%;
+}
+.jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
+.jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
+  margin-top: 3vh;
+  width: 10vw;
+  height: 5vh;
   font-size: 25px;
+  outline: none;
+  border: solid #00a181 3px;
 }
-.jobs-container .job-offers-container .job-offer button {
-  width: 100px;
-  height: 50px;
-  bottom: 0;
+.jobs-container .job-offers-container .job-offer .text-left .job-entry-button.element3,
+.jobs-container .job-offers-container .job-offer .text-right .job-entry-button.element3,
+.jobs-container .job-offers-container .job-offer .text-left .job-entry-button.element4,
+.jobs-container .job-offers-container .job-offer .text-right .job-entry-button.element4 {
+  border: solid #A4E473 3px;
 }
-.jobs-container .job-offers-container .job-offer button p {
-  font-size: 20px;
+.jobs-container .job-offers-container .job-offer .text-left .jobdescription,
+.jobs-container .job-offers-container .job-offer .text-right .jobdescription {
+  font-size: 180%;
 }
-.job-entry-container form label,
-.customer-contact-container form label {
+.job-entry-container form.contact-form label,
+.customer-contact-container form.contact-form label {
   margin-top: 10vh;
 }
 @media (min-width: 1400px) {
-  .job-entry-container form label,
-  .customer-contact-container form label {
+  .job-entry-container form.contact-form label,
+  .customer-contact-container form.contact-form label {
     font-size: 60px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .job-entry-container form label,
-  .customer-contact-container form label {
+  .job-entry-container form.contact-form label,
+  .customer-contact-container form.contact-form label {
     font-size: 60px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .job-entry-container form label,
-  .customer-contact-container form label {
+  .job-entry-container form.contact-form label,
+  .customer-contact-container form.contact-form label {
     font-size: 50px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .job-entry-container form label,
-  .customer-contact-container form label {
+  .job-entry-container form.contact-form label,
+  .customer-contact-container form.contact-form label {
     font-size: 50px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .job-entry-container form label,
-  .customer-contact-container form label {
+  .job-entry-container form.contact-form label,
+  .customer-contact-container form.contact-form label {
     font-size: 40px;
   }
 }
 @media (min-width: 321px) and (max-width: 575px) {
-  .job-entry-container form label,
-  .customer-contact-container form label {
+  .job-entry-container form.contact-form label,
+  .customer-contact-container form.contact-form label {
     font-size: 30px;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
-  .job-entry-container form label,
-  .customer-contact-container form label {
+  .job-entry-container form.contact-form label,
+  .customer-contact-container form.contact-form label {
     font-size: 30px;
   }
 }
-.job-entry-container form input[type=text],
-.customer-contact-container form input[type=text],
-.job-entry-container form input[type=tel],
-.customer-contact-container form input[type=tel],
-.job-entry-container form input[type=url],
-.customer-contact-container form input[type=url],
-.job-entry-container form input[type=file],
-.customer-contact-container form input[type=file],
-.job-entry-container form textarea,
-.customer-contact-container form textarea {
+.job-entry-container form.contact-form input[type=text],
+.customer-contact-container form.contact-form input[type=text],
+.job-entry-container form.contact-form input[type=tel],
+.customer-contact-container form.contact-form input[type=tel],
+.job-entry-container form.contact-form input[type=url],
+.customer-contact-container form.contact-form input[type=url],
+.job-entry-container form.contact-form input[type=file],
+.customer-contact-container form.contact-form input[type=file],
+.job-entry-container form.contact-form textarea,
+.customer-contact-container form.contact-form textarea {
   text-align: center;
   outline: none;
   background-color: #f4f4f4;
   border: solid 4px #00a181;
 }
 @media (min-width: 1400px) {
-  .job-entry-container form input[type=text],
-  .customer-contact-container form input[type=text],
-  .job-entry-container form input[type=tel],
-  .customer-contact-container form input[type=tel],
-  .job-entry-container form input[type=url],
-  .customer-contact-container form input[type=url],
-  .job-entry-container form input[type=file],
-  .customer-contact-container form input[type=file],
-  .job-entry-container form textarea,
-  .customer-contact-container form textarea {
+  .job-entry-container form.contact-form input[type=text],
+  .customer-contact-container form.contact-form input[type=text],
+  .job-entry-container form.contact-form input[type=tel],
+  .customer-contact-container form.contact-form input[type=tel],
+  .job-entry-container form.contact-form input[type=url],
+  .customer-contact-container form.contact-form input[type=url],
+  .job-entry-container form.contact-form input[type=file],
+  .customer-contact-container form.contact-form input[type=file],
+  .job-entry-container form.contact-form textarea,
+  .customer-contact-container form.contact-form textarea {
     font-size: 40px;
     width: 30vw;
     height: 10vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form input[type=text]:focus,
-  .customer-contact-container form input[type=text]:focus,
-  .job-entry-container form input[type=tel]:focus,
-  .customer-contact-container form input[type=tel]:focus,
-  .job-entry-container form input[type=url]:focus,
-  .customer-contact-container form input[type=url]:focus,
-  .job-entry-container form input[type=file]:focus,
-  .customer-contact-container form input[type=file]:focus,
-  .job-entry-container form textarea:focus,
-  .customer-contact-container form textarea:focus {
+  .job-entry-container form.contact-form input[type=text]:focus,
+  .customer-contact-container form.contact-form input[type=text]:focus,
+  .job-entry-container form.contact-form input[type=tel]:focus,
+  .customer-contact-container form.contact-form input[type=tel]:focus,
+  .job-entry-container form.contact-form input[type=url]:focus,
+  .customer-contact-container form.contact-form input[type=url]:focus,
+  .job-entry-container form.contact-form input[type=file]:focus,
+  .customer-contact-container form.contact-form input[type=file]:focus,
+  .job-entry-container form.contact-form textarea:focus,
+  .customer-contact-container form.contact-form textarea:focus {
     width: 60vw;
     height: 10vh;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .job-entry-container form input[type=text],
-  .customer-contact-container form input[type=text],
-  .job-entry-container form input[type=tel],
-  .customer-contact-container form input[type=tel],
-  .job-entry-container form input[type=url],
-  .customer-contact-container form input[type=url],
-  .job-entry-container form input[type=file],
-  .customer-contact-container form input[type=file],
-  .job-entry-container form textarea,
-  .customer-contact-container form textarea {
+  .job-entry-container form.contact-form input[type=text],
+  .customer-contact-container form.contact-form input[type=text],
+  .job-entry-container form.contact-form input[type=tel],
+  .customer-contact-container form.contact-form input[type=tel],
+  .job-entry-container form.contact-form input[type=url],
+  .customer-contact-container form.contact-form input[type=url],
+  .job-entry-container form.contact-form input[type=file],
+  .customer-contact-container form.contact-form input[type=file],
+  .job-entry-container form.contact-form textarea,
+  .customer-contact-container form.contact-form textarea {
     font-size: 40px;
     width: 30vw;
     height: 10vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form input[type=text]:focus,
-  .customer-contact-container form input[type=text]:focus,
-  .job-entry-container form input[type=tel]:focus,
-  .customer-contact-container form input[type=tel]:focus,
-  .job-entry-container form input[type=url]:focus,
-  .customer-contact-container form input[type=url]:focus,
-  .job-entry-container form input[type=file]:focus,
-  .customer-contact-container form input[type=file]:focus,
-  .job-entry-container form textarea:focus,
-  .customer-contact-container form textarea:focus {
+  .job-entry-container form.contact-form input[type=text]:focus,
+  .customer-contact-container form.contact-form input[type=text]:focus,
+  .job-entry-container form.contact-form input[type=tel]:focus,
+  .customer-contact-container form.contact-form input[type=tel]:focus,
+  .job-entry-container form.contact-form input[type=url]:focus,
+  .customer-contact-container form.contact-form input[type=url]:focus,
+  .job-entry-container form.contact-form input[type=file]:focus,
+  .customer-contact-container form.contact-form input[type=file]:focus,
+  .job-entry-container form.contact-form textarea:focus,
+  .customer-contact-container form.contact-form textarea:focus {
     width: 60vw;
     height: 10vh;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .job-entry-container form input[type=text],
-  .customer-contact-container form input[type=text],
-  .job-entry-container form input[type=tel],
-  .customer-contact-container form input[type=tel],
-  .job-entry-container form input[type=url],
-  .customer-contact-container form input[type=url],
-  .job-entry-container form input[type=file],
-  .customer-contact-container form input[type=file],
-  .job-entry-container form textarea,
-  .customer-contact-container form textarea {
+  .job-entry-container form.contact-form input[type=text],
+  .customer-contact-container form.contact-form input[type=text],
+  .job-entry-container form.contact-form input[type=tel],
+  .customer-contact-container form.contact-form input[type=tel],
+  .job-entry-container form.contact-form input[type=url],
+  .customer-contact-container form.contact-form input[type=url],
+  .job-entry-container form.contact-form input[type=file],
+  .customer-contact-container form.contact-form input[type=file],
+  .job-entry-container form.contact-form textarea,
+  .customer-contact-container form.contact-form textarea {
     font-size: 30px;
     width: 20vw;
     height: 8vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form input[type=text]:focus,
-  .customer-contact-container form input[type=text]:focus,
-  .job-entry-container form input[type=tel]:focus,
-  .customer-contact-container form input[type=tel]:focus,
-  .job-entry-container form input[type=url]:focus,
-  .customer-contact-container form input[type=url]:focus,
-  .job-entry-container form input[type=file]:focus,
-  .customer-contact-container form input[type=file]:focus,
-  .job-entry-container form textarea:focus,
-  .customer-contact-container form textarea:focus {
+  .job-entry-container form.contact-form input[type=text]:focus,
+  .customer-contact-container form.contact-form input[type=text]:focus,
+  .job-entry-container form.contact-form input[type=tel]:focus,
+  .customer-contact-container form.contact-form input[type=tel]:focus,
+  .job-entry-container form.contact-form input[type=url]:focus,
+  .customer-contact-container form.contact-form input[type=url]:focus,
+  .job-entry-container form.contact-form input[type=file]:focus,
+  .customer-contact-container form.contact-form input[type=file]:focus,
+  .job-entry-container form.contact-form textarea:focus,
+  .customer-contact-container form.contact-form textarea:focus {
     width: 40vw;
     height: 8vh;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .job-entry-container form input[type=text],
-  .customer-contact-container form input[type=text],
-  .job-entry-container form input[type=tel],
-  .customer-contact-container form input[type=tel],
-  .job-entry-container form input[type=url],
-  .customer-contact-container form input[type=url],
-  .job-entry-container form input[type=file],
-  .customer-contact-container form input[type=file],
-  .job-entry-container form textarea,
-  .customer-contact-container form textarea {
+  .job-entry-container form.contact-form input[type=text],
+  .customer-contact-container form.contact-form input[type=text],
+  .job-entry-container form.contact-form input[type=tel],
+  .customer-contact-container form.contact-form input[type=tel],
+  .job-entry-container form.contact-form input[type=url],
+  .customer-contact-container form.contact-form input[type=url],
+  .job-entry-container form.contact-form input[type=file],
+  .customer-contact-container form.contact-form input[type=file],
+  .job-entry-container form.contact-form textarea,
+  .customer-contact-container form.contact-form textarea {
     font-size: 25px;
     width: 20vw;
     height: 6vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form input[type=text]:focus,
-  .customer-contact-container form input[type=text]:focus,
-  .job-entry-container form input[type=tel]:focus,
-  .customer-contact-container form input[type=tel]:focus,
-  .job-entry-container form input[type=url]:focus,
-  .customer-contact-container form input[type=url]:focus,
-  .job-entry-container form input[type=file]:focus,
-  .customer-contact-container form input[type=file]:focus,
-  .job-entry-container form textarea:focus,
-  .customer-contact-container form textarea:focus {
+  .job-entry-container form.contact-form input[type=text]:focus,
+  .customer-contact-container form.contact-form input[type=text]:focus,
+  .job-entry-container form.contact-form input[type=tel]:focus,
+  .customer-contact-container form.contact-form input[type=tel]:focus,
+  .job-entry-container form.contact-form input[type=url]:focus,
+  .customer-contact-container form.contact-form input[type=url]:focus,
+  .job-entry-container form.contact-form input[type=file]:focus,
+  .customer-contact-container form.contact-form input[type=file]:focus,
+  .job-entry-container form.contact-form textarea:focus,
+  .customer-contact-container form.contact-form textarea:focus {
     width: 40vw;
     height: 6vh;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .job-entry-container form input[type=text],
-  .customer-contact-container form input[type=text],
-  .job-entry-container form input[type=tel],
-  .customer-contact-container form input[type=tel],
-  .job-entry-container form input[type=url],
-  .customer-contact-container form input[type=url],
-  .job-entry-container form input[type=file],
-  .customer-contact-container form input[type=file],
-  .job-entry-container form textarea,
-  .customer-contact-container form textarea {
+  .job-entry-container form.contact-form input[type=text],
+  .customer-contact-container form.contact-form input[type=text],
+  .job-entry-container form.contact-form input[type=tel],
+  .customer-contact-container form.contact-form input[type=tel],
+  .job-entry-container form.contact-form input[type=url],
+  .customer-contact-container form.contact-form input[type=url],
+  .job-entry-container form.contact-form input[type=file],
+  .customer-contact-container form.contact-form input[type=file],
+  .job-entry-container form.contact-form textarea,
+  .customer-contact-container form.contact-form textarea {
     font-size: 25px;
     width: 20vw;
     height: 6vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form input[type=text]:focus,
-  .customer-contact-container form input[type=text]:focus,
-  .job-entry-container form input[type=tel]:focus,
-  .customer-contact-container form input[type=tel]:focus,
-  .job-entry-container form input[type=url]:focus,
-  .customer-contact-container form input[type=url]:focus,
-  .job-entry-container form input[type=file]:focus,
-  .customer-contact-container form input[type=file]:focus,
-  .job-entry-container form textarea:focus,
-  .customer-contact-container form textarea:focus {
+  .job-entry-container form.contact-form input[type=text]:focus,
+  .customer-contact-container form.contact-form input[type=text]:focus,
+  .job-entry-container form.contact-form input[type=tel]:focus,
+  .customer-contact-container form.contact-form input[type=tel]:focus,
+  .job-entry-container form.contact-form input[type=url]:focus,
+  .customer-contact-container form.contact-form input[type=url]:focus,
+  .job-entry-container form.contact-form input[type=file]:focus,
+  .customer-contact-container form.contact-form input[type=file]:focus,
+  .job-entry-container form.contact-form textarea:focus,
+  .customer-contact-container form.contact-form textarea:focus {
     width: 40vw;
     height: 6vh;
   }
 }
 @media (min-width: 321px) and (max-width: 575px) {
-  .job-entry-container form input[type=text],
-  .customer-contact-container form input[type=text],
-  .job-entry-container form input[type=tel],
-  .customer-contact-container form input[type=tel],
-  .job-entry-container form input[type=url],
-  .customer-contact-container form input[type=url],
-  .job-entry-container form input[type=file],
-  .customer-contact-container form input[type=file],
-  .job-entry-container form textarea,
-  .customer-contact-container form textarea {
+  .job-entry-container form.contact-form input[type=text],
+  .customer-contact-container form.contact-form input[type=text],
+  .job-entry-container form.contact-form input[type=tel],
+  .customer-contact-container form.contact-form input[type=tel],
+  .job-entry-container form.contact-form input[type=url],
+  .customer-contact-container form.contact-form input[type=url],
+  .job-entry-container form.contact-form input[type=file],
+  .customer-contact-container form.contact-form input[type=file],
+  .job-entry-container form.contact-form textarea,
+  .customer-contact-container form.contact-form textarea {
     font-size: 20px;
     width: 25vw;
     height: 5vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form input[type=text]:focus,
-  .customer-contact-container form input[type=text]:focus,
-  .job-entry-container form input[type=tel]:focus,
-  .customer-contact-container form input[type=tel]:focus,
-  .job-entry-container form input[type=url]:focus,
-  .customer-contact-container form input[type=url]:focus,
-  .job-entry-container form input[type=file]:focus,
-  .customer-contact-container form input[type=file]:focus,
-  .job-entry-container form textarea:focus,
-  .customer-contact-container form textarea:focus {
+  .job-entry-container form.contact-form input[type=text]:focus,
+  .customer-contact-container form.contact-form input[type=text]:focus,
+  .job-entry-container form.contact-form input[type=tel]:focus,
+  .customer-contact-container form.contact-form input[type=tel]:focus,
+  .job-entry-container form.contact-form input[type=url]:focus,
+  .customer-contact-container form.contact-form input[type=url]:focus,
+  .job-entry-container form.contact-form input[type=file]:focus,
+  .customer-contact-container form.contact-form input[type=file]:focus,
+  .job-entry-container form.contact-form textarea:focus,
+  .customer-contact-container form.contact-form textarea:focus {
     width: 50vw;
     height: 5vh;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
-  .job-entry-container form input[type=text],
-  .customer-contact-container form input[type=text],
-  .job-entry-container form input[type=tel],
-  .customer-contact-container form input[type=tel],
-  .job-entry-container form input[type=url],
-  .customer-contact-container form input[type=url],
-  .job-entry-container form input[type=file],
-  .customer-contact-container form input[type=file],
-  .job-entry-container form textarea,
-  .customer-contact-container form textarea {
+  .job-entry-container form.contact-form input[type=text],
+  .customer-contact-container form.contact-form input[type=text],
+  .job-entry-container form.contact-form input[type=tel],
+  .customer-contact-container form.contact-form input[type=tel],
+  .job-entry-container form.contact-form input[type=url],
+  .customer-contact-container form.contact-form input[type=url],
+  .job-entry-container form.contact-form input[type=file],
+  .customer-contact-container form.contact-form input[type=file],
+  .job-entry-container form.contact-form textarea,
+  .customer-contact-container form.contact-form textarea {
     font-size: 20px;
     width: 25vw;
     height: 5vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form input[type=text]:focus,
-  .customer-contact-container form input[type=text]:focus,
-  .job-entry-container form input[type=tel]:focus,
-  .customer-contact-container form input[type=tel]:focus,
-  .job-entry-container form input[type=url]:focus,
-  .customer-contact-container form input[type=url]:focus,
-  .job-entry-container form input[type=file]:focus,
-  .customer-contact-container form input[type=file]:focus,
-  .job-entry-container form textarea:focus,
-  .customer-contact-container form textarea:focus {
+  .job-entry-container form.contact-form input[type=text]:focus,
+  .customer-contact-container form.contact-form input[type=text]:focus,
+  .job-entry-container form.contact-form input[type=tel]:focus,
+  .customer-contact-container form.contact-form input[type=tel]:focus,
+  .job-entry-container form.contact-form input[type=url]:focus,
+  .customer-contact-container form.contact-form input[type=url]:focus,
+  .job-entry-container form.contact-form input[type=file]:focus,
+  .customer-contact-container form.contact-form input[type=file]:focus,
+  .job-entry-container form.contact-form textarea:focus,
+  .customer-contact-container form.contact-form textarea:focus {
     width: 50vw;
     height: 5vh;
   }
 }
-.job-entry-container form select,
-.customer-contact-container form select {
+.job-entry-container form.contact-form select,
+.customer-contact-container form.contact-form select {
   outline: none;
   background-color: #f4f4f4;
   border: solid 4px #00a181;
 }
 @media (min-width: 1400px) {
-  .job-entry-container form select,
-  .customer-contact-container form select {
+  .job-entry-container form.contact-form select,
+  .customer-contact-container form.contact-form select {
     font-size: 40px;
     width: 30vw;
     height: 10vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form select:focus,
-  .customer-contact-container form select:focus {
+  .job-entry-container form.contact-form select:focus,
+  .customer-contact-container form.contact-form select:focus {
     width: 60vw;
     height: 10vh;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .job-entry-container form select,
-  .customer-contact-container form select {
+  .job-entry-container form.contact-form select,
+  .customer-contact-container form.contact-form select {
     font-size: 40px;
     width: 30vw;
     height: 10vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form select:focus,
-  .customer-contact-container form select:focus {
+  .job-entry-container form.contact-form select:focus,
+  .customer-contact-container form.contact-form select:focus {
     width: 60vw;
     height: 10vh;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .job-entry-container form select,
-  .customer-contact-container form select {
+  .job-entry-container form.contact-form select,
+  .customer-contact-container form.contact-form select {
     font-size: 30px;
     width: 20vw;
     height: 8vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form select:focus,
-  .customer-contact-container form select:focus {
+  .job-entry-container form.contact-form select:focus,
+  .customer-contact-container form.contact-form select:focus {
     width: 40vw;
     height: 8vh;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .job-entry-container form select,
-  .customer-contact-container form select {
+  .job-entry-container form.contact-form select,
+  .customer-contact-container form.contact-form select {
     font-size: 25px;
     width: 20vw;
     height: 6vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form select:focus,
-  .customer-contact-container form select:focus {
+  .job-entry-container form.contact-form select:focus,
+  .customer-contact-container form.contact-form select:focus {
     width: 40vw;
     height: 6vh;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .job-entry-container form select,
-  .customer-contact-container form select {
+  .job-entry-container form.contact-form select,
+  .customer-contact-container form.contact-form select {
     font-size: 25px;
     width: 20vw;
     height: 6vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form select:focus,
-  .customer-contact-container form select:focus {
+  .job-entry-container form.contact-form select:focus,
+  .customer-contact-container form.contact-form select:focus {
     width: 50vw;
     height: 6vh;
   }
 }
 @media (min-width: 321px) and (max-width: 575px) {
-  .job-entry-container form select,
-  .customer-contact-container form select {
+  .job-entry-container form.contact-form select,
+  .customer-contact-container form.contact-form select {
     font-size: 20px;
     width: 25vw;
     height: 5vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form select:focus,
-  .customer-contact-container form select:focus {
+  .job-entry-container form.contact-form select:focus,
+  .customer-contact-container form.contact-form select:focus {
     width: 50vw;
     height: 5vh;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
-  .job-entry-container form select,
-  .customer-contact-container form select {
+  .job-entry-container form.contact-form select,
+  .customer-contact-container form.contact-form select {
     font-size: 15px;
     width: 25vw;
     height: 5vh;
     transition: width 0.4s ease-in-out;
   }
-  .job-entry-container form select:focus,
-  .customer-contact-container form select:focus {
+  .job-entry-container form.contact-form select:focus,
+  .customer-contact-container form.contact-form select:focus {
     width: 60vw;
     height: 5vh;
   }
 }
-.job-entry-container form button,
-.customer-contact-container form button {
+.job-entry-container form.contact-form button,
+.customer-contact-container form.contact-form button {
   margin-top: 5vh;
   margin-bottom: 5vh;
   background-color: #f4f4f4;
   border: solid 4px #00a181;
 }
 @media (min-width: 1400px) {
-  .job-entry-container form button,
-  .customer-contact-container form button {
+  .job-entry-container form.contact-form button,
+  .customer-contact-container form.contact-form button {
     font-size: 40px;
     width: 30vw;
     height: 10vh;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .job-entry-container form button,
-  .customer-contact-container form button {
+  .job-entry-container form.contact-form button,
+  .customer-contact-container form.contact-form button {
     font-size: 40px;
     width: 30vw;
     height: 10vh;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .job-entry-container form button,
-  .customer-contact-container form button {
+  .job-entry-container form.contact-form button,
+  .customer-contact-container form.contact-form button {
     font-size: 30px;
     width: 20vw;
     height: 8vh;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .job-entry-container form button,
-  .customer-contact-container form button {
+  .job-entry-container form.contact-form button,
+  .customer-contact-container form.contact-form button {
     font-size: 25px;
     width: 20vw;
     height: 6vh;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .job-entry-container form button,
-  .customer-contact-container form button {
+  .job-entry-container form.contact-form button,
+  .customer-contact-container form.contact-form button {
     font-size: 25px;
     width: 20vw;
     height: 6vh;
   }
 }
 @media (min-width: 321px) and (max-width: 575px) {
-  .job-entry-container form button,
-  .customer-contact-container form button {
+  .job-entry-container form.contact-form button,
+  .customer-contact-container form.contact-form button {
     font-size: 20px;
     width: 25vw;
     height: 5vh;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
-  .job-entry-container form button,
-  .customer-contact-container form button {
+  .job-entry-container form.contact-form button,
+  .customer-contact-container form.contact-form button {
     font-size: 20px;
     width: 25vw;
     height: 5vh;
   }
 }
-.job-entry-container form .error,
-.customer-contact-container form .error {
+.job-entry-container form.contact-form .error,
+.customer-contact-container form.contact-form .error {
   color: #FF0000;
 }
 @media (min-width: 1400px) {
-  .job-entry-container form .error,
-  .customer-contact-container form .error {
+  .job-entry-container form.contact-form .error,
+  .customer-contact-container form.contact-form .error {
     font-size: 30px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .job-entry-container form .error,
-  .customer-contact-container form .error {
+  .job-entry-container form.contact-form .error,
+  .customer-contact-container form.contact-form .error {
     font-size: 30px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .job-entry-container form .error,
-  .customer-contact-container form .error {
+  .job-entry-container form.contact-form .error,
+  .customer-contact-container form.contact-form .error {
     font-size: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .job-entry-container form .error,
-  .customer-contact-container form .error {
+  .job-entry-container form.contact-form .error,
+  .customer-contact-container form.contact-form .error {
     font-size: 15px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .job-entry-container form .error,
-  .customer-contact-container form .error {
+  .job-entry-container form.contact-form .error,
+  .customer-contact-container form.contact-form .error {
     font-size: 15px;
   }
 }
 @media (min-width: 321px) and (max-width: 575px) {
-  .job-entry-container form .error,
-  .customer-contact-container form .error {
+  .job-entry-container form.contact-form .error,
+  .customer-contact-container form.contact-form .error {
     font-size: 10px;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
-  .job-entry-container form .error,
-  .customer-contact-container form .error {
+  .job-entry-container form.contact-form .error,
+  .customer-contact-container form.contact-form .error {
     font-size: 10px;
   }
-}
-@media (min-width: 1200px) {
-  .admin-panel .applications-container {
-    width: 50vw;
-  }
-}
-@media (max-width: 1199px) and (min-width: 0) {
-  .admin-panel .applications-container {
-    width: 100vw;
-  }
-}
-.admin-panel .applications-container input[type="submit"] {
-  font-size: 25px;
-  width: 10vw;
-  height: 4vh;
-  border: solid 3px #00a181;
-  background-color: #f4f4f4;
-}
-.admin-panel .job-offers-container {
-  width: 50vw;
 }
 .imprint-container,
 .copyright-container,
@@ -1512,4 +1484,95 @@ body {
 .contact-infos-container .heading-2 {
   font-size: 200%;
   color: #00a181;
+}
+.admin-dash-overview-container {
+  width: 100vw;
+}
+.admin-dash-overview-container .overview-title {
+  margin-top: 3vh;
+  font-size: 100px;
+}
+.admin-dash-overview-container .overview-content-container {
+  margin-top: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+.admin-dash-overview-container .overview-content-container .overview-linked-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px #A4E473 solid;
+  width: 30vw;
+  height: 46vh;
+}
+.admin-dash-applications-container .title,
+.admin-dash-job-offers-container .title {
+  font-size: 100px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.admin-dash-applications-container .sections-container,
+.admin-dash-job-offers-container .sections-container {
+  display: flex;
+}
+.admin-dash-applications-container .sections-container .content-section,
+.admin-dash-job-offers-container .sections-container .content-section {
+  width: 50vw;
+  height: 100vh;
+}
+.admin-dash-applications-container .sections-container .content-section.newApplications,
+.admin-dash-job-offers-container .sections-container .content-section.newApplications,
+.admin-dash-applications-container .sections-container .content-section.markedApplications,
+.admin-dash-job-offers-container .sections-container .content-section.markedApplications,
+.admin-dash-applications-container .sections-container .content-section.currenJobOffers,
+.admin-dash-job-offers-container .sections-container .content-section.currenJobOffers {
+  background-color: #A4E473;
+}
+.admin-dash-applications-container .sections-container .content-section.seenApplications,
+.admin-dash-job-offers-container .sections-container .content-section.seenApplications {
+  background-color: #00a181;
+}
+.admin-dash-applications-container .sections-container .content-section.show-section,
+.admin-dash-job-offers-container .sections-container .content-section.show-section {
+  background-color: #f4f4f4;
+}
+.admin-dash-applications-container .sections-container .content-section .heading,
+.admin-dash-job-offers-container .sections-container .content-section .heading {
+  margin-top: 2vh;
+}
+.admin-dash-applications-container .sections-container .content-section .application,
+.admin-dash-job-offers-container .sections-container .content-section .application {
+  margin-left: 9vw;
+  display: flex;
+}
+.admin-dash-applications-container .sections-container .content-section .application form input,
+.admin-dash-job-offers-container .sections-container .content-section .application form input {
+  display: none;
+}
+.admin-dash-applications-container .sections-container .content-section .application form button,
+.admin-dash-job-offers-container .sections-container .content-section .application form button {
+  margin-left: 0.5vw;
+  outline: none;
+  border: none;
+  background-color: #A4E473;
+}
+.admin-dash-applications-container .sections-container .content-section .application form button img,
+.admin-dash-job-offers-container .sections-container .content-section .application form button img {
+  width: 30px;
+  height: 30px;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .application-title .heading,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .application-title .heading {
+  font-size: 100px;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .application-title .heading-2,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .application-title .heading-2 {
+  font-size: 40px;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .application-text,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .application-text {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  font-size: 45px;
 }

@@ -2,7 +2,10 @@
 
 session_start();
 
-    $_SESSION['lang'] = $_SESSION['lang']; 
+    if(!isset($_SESSION['lang'])){
+        $_SESSION['lang'] = "en";
+    }
+
     $_SESSION['langSwitchSetActiveEN'] = ""; 
     $_SESSION['langSwitchSetActiveDE'] = "";
     $_SESSION['langSwitchSetActiveIT'] = "";

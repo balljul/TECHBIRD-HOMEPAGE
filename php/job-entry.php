@@ -145,10 +145,11 @@
         }
 
         if($errorIndex == 0){
-            $sql = "INSERT INTO `job-applications`(`fname`, `lname`, `department`, `Application`, `Comment`, `email`,  `website`, `phonenumber`) VALUES ('$fname','$lname','$department','$application','$comment','$email', '$website', '$phonenumber')"; 
+            $sql = "INSERT INTO `job-applications`(`fname`, `lname`, `department`, `Application`, `Comment`, `email`,  `website`, `phonenumber`, `status`) VALUES ('$fname','$lname','$department','$application','$comment','$email', '$website', '$phonenumber', 'u')"; 
             $conn->query($sql); 
             $fname = $lname = $department = $email = $application = $comment = $website = $phonenumber = "";
             $fnameErr = $lnameErr = $departmentErr = $emailErr = $applicationErr = $phonenumberErr = $websiteErr = ""; 
+            $errorIndex = 7;
         }
         else{
             $errorIndex = 7;
@@ -159,7 +160,7 @@
 
 ?>
    
-   <form class="text-center center" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);  ?>">
+   <form class="text-center center contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);  ?>">
 
         <label for="fname">First Name : <span class="error"> * <?php echo $fnameErr; ?></span></label>
         <br>
@@ -225,5 +226,9 @@
         <button>Send Application</button>
    </form>
 
+
+   <?php
+    include 'footer.php';
+   ?>
 </body>
 </html>
