@@ -4,7 +4,11 @@
 
 basename($_SERVER["SCRIPT_FILENAME"], '.php');
 
-// 
+// TO toogle a page reload do the following
+
+header('Refresh:0"');
+
+
 
 
 
