@@ -59,6 +59,7 @@
     $TECHBIRD_PARTNERS_CONTENT01_03 =  "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_PARTNERS_CONTENT01_03'";
     $TECHBIRD_PARTNERS_CONTENT01_04 =  "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_PARTNERS_CONTENT01_04'";
     $TECHBIRD_PARTNERS_CONTENT01_05 =  "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_PARTNERS_CONTENT01_05'";
+    $TECHBIRD_PARTNERS_CONTACT_BUTTON = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_PARTNERS_CONTACT_BUTTON'";
 
     ?>
 
@@ -118,7 +119,7 @@
                 <span class="text-uppercase text-sherpablue"><?php echo retrievetext($TECHBIRD_PARTNERS_CONTENT01_05); ?> </span>
                 <br>
                 <a href="customer-contact.php">
-                <button class="customer-contact-button text-light">Contact us</button>
+                <button class="customer-contact-button text-light"><?php echo retrievetext($TECHBIRD_PARTNERS_CONTACT_BUTTON); ?></button>
                 </a>
               </h1>
         </div>

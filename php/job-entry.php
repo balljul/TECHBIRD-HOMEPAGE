@@ -130,6 +130,7 @@
         }
 
         if(empty($_POST['application'])){
+            $errorIndex--;
             $applicationErr = "Your Application is required!";
         }
         else{
@@ -219,7 +220,7 @@
 
         <label for="comment">Feel free to add a comment : </label>
         <br>
-        <textarea id="comment" cols="30" rows="10" name="comment" "></textarea>
+        <textarea id="comment" cols="30" rows="10" name="comment"></textarea>
 
         <br>
 

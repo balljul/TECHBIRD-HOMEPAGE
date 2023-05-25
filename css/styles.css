@@ -280,22 +280,140 @@ body {
   height: 100vh;
 }
 .locations-container .locations-section h1.heading {
-  padding-top: 10vh;
+  padding-top: 5vh;
+}
+@media (min-width: 1400px) {
+  .locations-container .locations-section h1.heading {
+    font-size: 200px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .locations-container .locations-section h1.heading {
+    font-size: 170px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .locations-container .locations-section h1.heading {
+    font-size: 140px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .locations-container .locations-section h1.heading {
+    font-size: 110px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .locations-container .locations-section h1.heading {
+    font-size: 80px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .locations-container .locations-section h1.heading {
+    font-size: 55px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .locations-container .locations-section h1.heading {
+    font-size: 40px;
+  }
 }
 .locations-container .locations-section .icon {
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
 }
-.locations-container .locations-section .icon img {
-  width: 200px;
-  height: 200px;
+@media (min-width: 1400px) {
+  .locations-container .locations-section .icon img {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .locations-container .locations-section .icon img {
+    height: 160px;
+    width: 160px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .locations-container .locations-section .icon img {
+    height: 140px;
+    width: 140px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .locations-container .locations-section .icon img {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .locations-container .locations-section .icon img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .locations-container .locations-section .icon img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .locations-container .locations-section .icon img {
+    width: 80px;
+    height: 80px;
+  }
 }
 .locations-container .locations-section p {
-  padding-top: 10vh;
-  width: 500px;
-  max-width: 80vw;
-  font-size: 30px;
+  padding-top: 5vh;
+}
+@media (min-width: 1400px) {
+  .locations-container .locations-section p {
+    font-size: 40px;
+    width: 1000px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .locations-container .locations-section p {
+    padding-top: 10vh;
+    font-size: 40px;
+    width: 1000px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .locations-container .locations-section p {
+    padding-top: 10vh;
+    font-size: 35px;
+    width: 800px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .locations-container .locations-section p {
+    padding-top: 10vh;
+    font-size: 35px;
+    width: 600px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .locations-container .locations-section p {
+    padding-top: 10vh;
+    font-size: 30px;
+    width: 400px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .locations-container .locations-section p {
+    padding-top: 10vh;
+    font-size: 25px;
+    width: 90vw;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .locations-container .locations-section p {
+    padding-top: 10vh;
+    font-size: 20px;
+    width: 90vw;
+  }
 }
 .locations-container .locations-section.bg-image-barcelona {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/Backgrounds/Locations/Barcelona-background.jpg);
@@ -480,18 +598,87 @@ body {
 .partners-container .partners-entry-text .partners-entry-text-subcontainer {
   display: flex;
 }
+@media (min-width: 1400px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer h1 {
+    font-size: 150px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer h1 {
+    font-size: 140px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer h1 {
+    font-size: 120px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer h1 {
+    font-size: 90px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer h1 {
+    font-size: 40px;
+  }
+}
 .partners-container .partners-entry-text .partners-entry-text-subcontainer .icon img {
-  width: 64px;
   height: auto;
 }
+@media (min-width: 1400px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer .icon img {
+    width: 96px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer .icon img {
+    width: 91px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer .icon img {
+    width: 83px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer .icon img {
+    width: 76px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer .icon img {
+    width: 68px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer .icon img {
+    width: 62px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .partners-container .partners-entry-text .partners-entry-text-subcontainer .icon img {
+    width: 57px;
+  }
+}
 .partners-container .partners-entry-text .partners-entry-text-subcontainer .customer-contact-button {
-  margin-top: 4vh;
-  width: 10vw;
-  height: 6vh;
+  margin-top: 2vh;
+  width: 240px;
+  height: 55px;
+  font-size: 30px;
   outline: none;
   border: solid #00a181 4px;
   background-color: #004651;
-  font-size: 40px;
 }
 .partners-container .spacing {
   height: 0;
@@ -711,44 +898,44 @@ body {
 }
 @media (min-width: 1400px) {
   .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
-    width: 160px;
-    height: 160px;
+    width: 250px;
+    height: 250px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
   .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
     width: 140px;
     height: 140px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
-    width: 120px;
-    height: 120px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
-    width: 100px;
-    height: 100px;
-  }
-}
 @media (min-width: 321px) and (max-width: 575px) {
   .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
   .sm-container .sm-text .sm-text-subtext-with-icon-nextToIt .icon img {
-    width: 80px;
-    height: 80px;
+    width: 115px;
+    height: 115px;
   }
 }
 @media (min-width: 992px) {
@@ -807,78 +994,82 @@ body {
 .employees-container .heading-text.bg-employees-entry {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/Headers/Employees-IconHeader.png);
 }
-.employees-container .heading-text h1 {
+.employees-container .heading-text h1.heading {
   margin-top: 15vh;
-  padding-bottom: 5vh;
 }
 @media (min-width: 1400px) {
-  .employees-container .heading-text h1 {
-    font-size: 80px;
+  .employees-container .heading-text h1.heading {
+    font-size: 180px;
+    margin-top: 5vh;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .employees-container .heading-text h1 {
+  .employees-container .heading-text h1.heading {
     font-size: 170px;
+    margin-top: 10vh;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .employees-container .heading-text h1 {
+  .employees-container .heading-text h1.heading {
     font-size: 140px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .employees-container .heading-text h1 {
+  .employees-container .heading-text h1.heading {
     font-size: 110px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .employees-container .heading-text h1 {
+  .employees-container .heading-text h1.heading {
     font-size: 80px;
+    margin-top: 10vh;
   }
 }
 @media (min-width: 321px) and (max-width: 575px) {
-  .employees-container .heading-text h1 {
-    font-size: 55px;
+  .employees-container .heading-text h1.heading {
+    font-size: 65px;
+    margin-top: 5vh;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
-  .employees-container .heading-text h1 {
-    font-size: 40px;
+  .employees-container .heading-text h1.heading {
+    font-size: 50px;
+    margin-top: 5vh;
   }
 }
 @media (min-width: 1400px) {
   .employees-container .heading-text .heading-2 {
-    font-size: 65px;
+    font-size: 80px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .employees-container .heading-text .heading-2 {
-    font-size: 55px;
+    font-size: 70px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .employees-container .heading-text .heading-2 {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .employees-container .heading-text .heading-2 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .employees-container .heading-text .heading-2 {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 @media (min-width: 321px) and (max-width: 575px) {
   .employees-container .heading-text .heading-2 {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
   .employees-container .heading-text .heading-2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 .employees-container .heading-text p {
@@ -891,32 +1082,32 @@ body {
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .employees-container .heading-text p span {
-    font-size: 170px;
+    font-size: 35px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .employees-container .heading-text p span {
-    font-size: 140px;
+    font-size: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .employees-container .heading-text p span {
-    font-size: 110px;
+    font-size: 25px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .employees-container .heading-text p span {
-    font-size: 80px;
+    font-size: 25px;
   }
 }
 @media (min-width: 321px) and (max-width: 575px) {
   .employees-container .heading-text p span {
-    font-size: 55px;
+    font-size: 20px;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
   .employees-container .heading-text p span {
-    font-size: 40px;
+    font-size: 18px;
   }
 }
 .employees-container .employee-profiles-container {
@@ -955,40 +1146,259 @@ body {
   width: 100vw;
   height: 55vh;
 }
+.jobs-container .job-offers-container .job-offer.bg-right {
+  background-position: left;
+}
+.jobs-container .job-offers-container .job-offer.bg-left {
+  background-position: right;
+}
 .jobs-container .job-offers-container .job-offer .text-right {
   width: 60vw;
   margin-left: 40vw;
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .jobs-container .job-offers-container .job-offer .text-right {
+    width: 70vw;
+    margin-left: 30vw;
+  }
+}
+@media (min-width: 1150px) and (max-width: 1299px) {
+  .jobs-container .job-offers-container .job-offer .text-right {
+    width: 80vw;
+    margin-left: 20vw;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1149px) {
+  .jobs-container .job-offers-container .job-offer .text-right {
+    width: 90vw;
+    margin-left: 10vw;
+  }
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .jobs-container .job-offers-container .job-offer .text-right {
+    width: 100vw;
+    margin: 0;
+  }
 }
 .jobs-container .job-offers-container .job-offer .text-left {
   width: 60vw;
   margin-right: 40vw;
 }
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .jobs-container .job-offers-container .job-offer .text-left {
+    width: 70vw;
+    margin-right: 30vw;
+  }
+}
+@media (min-width: 1150px) and (max-width: 1299px) {
+  .jobs-container .job-offers-container .job-offer .text-left {
+    width: 80vw;
+    margin-right: 20vw;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1149px) {
+  .jobs-container .job-offers-container .job-offer .text-left {
+    width: 90vw;
+    margin-right: 10vw;
+  }
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+  .jobs-container .job-offers-container .job-offer .text-left {
+    width: 100vw;
+    margin: 0;
+  }
+}
 .jobs-container .job-offers-container .job-offer .text-left,
 .jobs-container .job-offers-container .job-offer .text-right {
   padding-top: 2vh;
 }
-.jobs-container .job-offers-container .job-offer .text-left .heading-2,
-.jobs-container .job-offers-container .job-offer .text-right .heading-2 {
-  font-size: 300%;
+@media (min-width: 1400px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading,
+  .jobs-container .job-offers-container .job-offer .text-right .heading {
+    font-size: 80px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading,
+  .jobs-container .job-offers-container .job-offer .text-right .heading {
+    font-size: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading,
+  .jobs-container .job-offers-container .job-offer .text-right .heading {
+    font-size: 90px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading,
+  .jobs-container .job-offers-container .job-offer .text-right .heading {
+    font-size: 60px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading,
+  .jobs-container .job-offers-container .job-offer .text-right .heading {
+    font-size: 45px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading,
+  .jobs-container .job-offers-container .job-offer .text-right .heading {
+    font-size: 35px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading,
+  .jobs-container .job-offers-container .job-offer .text-right .heading {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading-2,
+  .jobs-container .job-offers-container .job-offer .text-right .heading-2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading-2,
+  .jobs-container .job-offers-container .job-offer .text-right .heading-2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading-2,
+  .jobs-container .job-offers-container .job-offer .text-right .heading-2 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading-2,
+  .jobs-container .job-offers-container .job-offer .text-right .heading-2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading-2,
+  .jobs-container .job-offers-container .job-offer .text-right .heading-2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading-2,
+  .jobs-container .job-offers-container .job-offer .text-right .heading-2 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .jobs-container .job-offers-container .job-offer .text-left .heading-2,
+  .jobs-container .job-offers-container .job-offer .text-right .heading-2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .jobs-container .job-offers-container .job-offer .text-left .jobdescription,
+  .jobs-container .job-offers-container .job-offer .text-right .jobdescription {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .jobs-container .job-offers-container .job-offer .text-left .jobdescription,
+  .jobs-container .job-offers-container .job-offer .text-right .jobdescription {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .jobs-container .job-offers-container .job-offer .text-left .jobdescription,
+  .jobs-container .job-offers-container .job-offer .text-right .jobdescription {
+    font-size: 32px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .jobs-container .job-offers-container .job-offer .text-left .jobdescription,
+  .jobs-container .job-offers-container .job-offer .text-right .jobdescription {
+    font-size: 25px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .jobs-container .job-offers-container .job-offer .text-left .jobdescription,
+  .jobs-container .job-offers-container .job-offer .text-right .jobdescription {
+    font-size: 25px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .jobs-container .job-offers-container .job-offer .text-left .jobdescription,
+  .jobs-container .job-offers-container .job-offer .text-right .jobdescription {
+    font-size: 20px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .jobs-container .job-offers-container .job-offer .text-left .jobdescription,
+  .jobs-container .job-offers-container .job-offer .text-right .jobdescription {
+    font-size: 15px;
+  }
 }
 .jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
 .jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
   margin-top: 3vh;
-  width: 10vw;
-  height: 5vh;
-  font-size: 25px;
   outline: none;
   border: solid #00a181 3px;
 }
-.jobs-container .job-offers-container .job-offer .text-left .job-entry-button.element3,
-.jobs-container .job-offers-container .job-offer .text-right .job-entry-button.element3,
-.jobs-container .job-offers-container .job-offer .text-left .job-entry-button.element4,
-.jobs-container .job-offers-container .job-offer .text-right .job-entry-button.element4 {
-  border: solid #A4E473 3px;
+@media (min-width: 1400px) {
+  .jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
+  .jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
+    width: 170px;
+    height: 50px;
+    font-size: 30px;
+  }
 }
-.jobs-container .job-offers-container .job-offer .text-left .jobdescription,
-.jobs-container .job-offers-container .job-offer .text-right .jobdescription {
-  font-size: 180%;
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
+  .jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
+    width: 170px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
+  .jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
+  .jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
+    width: 130px;
+    height: 40px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
+  .jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 321px) and (max-width: 575px) {
+  .jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
+  .jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .jobs-container .job-offers-container .job-offer .text-left .job-entry-button,
+  .jobs-container .job-offers-container .job-offer .text-right .job-entry-button {
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+  }
 }
 .job-entry-container form.contact-form label,
 .customer-contact-container form.contact-form label {
@@ -1153,7 +1563,7 @@ body {
   .job-entry-container form.contact-form textarea,
   .customer-contact-container form.contact-form textarea {
     font-size: 25px;
-    width: 20vw;
+    width: 30vw;
     height: 6vh;
     transition: width 0.4s ease-in-out;
   }
@@ -1183,7 +1593,7 @@ body {
   .job-entry-container form.contact-form textarea,
   .customer-contact-container form.contact-form textarea {
     font-size: 25px;
-    width: 20vw;
+    width: 30vw;
     height: 6vh;
     transition: width 0.4s ease-in-out;
   }
@@ -1213,7 +1623,7 @@ body {
   .job-entry-container form.contact-form textarea,
   .customer-contact-container form.contact-form textarea {
     font-size: 20px;
-    width: 25vw;
+    width: 35vw;
     height: 5vh;
     transition: width 0.4s ease-in-out;
   }
@@ -1243,7 +1653,7 @@ body {
   .job-entry-container form.contact-form textarea,
   .customer-contact-container form.contact-form textarea {
     font-size: 20px;
-    width: 25vw;
+    width: 35vw;
     height: 5vh;
     transition: width 0.4s ease-in-out;
   }
@@ -1417,7 +1827,7 @@ body {
   .customer-contact-container form.contact-form button {
     font-size: 20px;
     width: 25vw;
-    height: 5vh;
+    height: 7vh;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
@@ -1425,7 +1835,7 @@ body {
   .customer-contact-container form.contact-form button {
     font-size: 20px;
     width: 25vw;
-    height: 5vh;
+    height: 7vh;
   }
 }
 .job-entry-container form.contact-form .error,
@@ -1525,8 +1935,8 @@ body {
 .admin-dash-job-offers-container .sections-container .content-section.newApplications,
 .admin-dash-applications-container .sections-container .content-section.markedApplications,
 .admin-dash-job-offers-container .sections-container .content-section.markedApplications,
-.admin-dash-applications-container .sections-container .content-section.currenJobOffers,
-.admin-dash-job-offers-container .sections-container .content-section.currenJobOffers {
+.admin-dash-applications-container .sections-container .content-section.currentJobOffers,
+.admin-dash-job-offers-container .sections-container .content-section.currentJobOffers {
   background-color: #A4E473;
 }
 .admin-dash-applications-container .sections-container .content-section.seenApplications,
@@ -1542,23 +1952,31 @@ body {
   margin-top: 2vh;
 }
 .admin-dash-applications-container .sections-container .content-section .application,
-.admin-dash-job-offers-container .sections-container .content-section .application {
+.admin-dash-job-offers-container .sections-container .content-section .application,
+.admin-dash-applications-container .sections-container .content-section .offer,
+.admin-dash-job-offers-container .sections-container .content-section .offer {
   margin-left: 9vw;
   display: flex;
 }
 .admin-dash-applications-container .sections-container .content-section .application form input,
-.admin-dash-job-offers-container .sections-container .content-section .application form input {
+.admin-dash-job-offers-container .sections-container .content-section .application form input,
+.admin-dash-applications-container .sections-container .content-section .offer form input,
+.admin-dash-job-offers-container .sections-container .content-section .offer form input {
   display: none;
 }
 .admin-dash-applications-container .sections-container .content-section .application form button,
-.admin-dash-job-offers-container .sections-container .content-section .application form button {
+.admin-dash-job-offers-container .sections-container .content-section .application form button,
+.admin-dash-applications-container .sections-container .content-section .offer form button,
+.admin-dash-job-offers-container .sections-container .content-section .offer form button {
   margin-left: 0.5vw;
   outline: none;
   border: none;
-  background-color: #A4E473;
+  background-color: transparent;
 }
 .admin-dash-applications-container .sections-container .content-section .application form button img,
-.admin-dash-job-offers-container .sections-container .content-section .application form button img {
+.admin-dash-job-offers-container .sections-container .content-section .application form button img,
+.admin-dash-applications-container .sections-container .content-section .offer form button img,
+.admin-dash-job-offers-container .sections-container .content-section .offer form button img {
   width: 30px;
   height: 30px;
 }
@@ -1575,4 +1993,142 @@ body {
   margin-top: 5vh;
   margin-left: 5vw;
   font-size: 45px;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .buttons-container,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .buttons-container .applications-button-container,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .buttons-container .applications-button-container {
+  margin-left: 5vw;
+  margin-top: 30vh;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .buttons-container .applications-button-container form input,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .buttons-container .applications-button-container form input {
+  display: none;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .buttons-container .applications-button-container form .CVbutton,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .buttons-container .applications-button-container form .CVbutton {
+  font-size: 30px;
+  outline: none;
+  border: solid #00a181 5px;
+  width: 10vw;
+  height: 5vh;
+  margin-bottom: 1vh;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .buttons-container .applications-button-container form .mailbutton,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .buttons-container .applications-button-container form .mailbutton {
+  font-size: 30px;
+  outline: none;
+  border: solid #A4E473 5px;
+  width: 10vw;
+  height: 5vh;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .buttons-container .icon-container,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .buttons-container .icon-container {
+  margin-top: 24vh;
+  margin-right: 5vw;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .buttons-container .icon-container input,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .buttons-container .icon-container input {
+  display: none;
+}
+.admin-dash-applications-container .sections-container .content-section .selected-application .buttons-container .icon-container button,
+.admin-dash-job-offers-container .sections-container .content-section .selected-application .buttons-container .icon-container button {
+  background-color: transparent;
+  border: none;
+}
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form {
+  width: 45vw;
+  height: 90vh;
+  margin-left: 2.5vw;
+}
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .englishoffer,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .englishoffer,
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .germanoffer,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .germanoffer,
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .italianoffer,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .italianoffer {
+  display: flex;
+}
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .englishoffer label,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .englishoffer label,
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .germanoffer label,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .germanoffer label,
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .italianoffer label,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .italianoffer label {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .englishoffer label textarea,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .englishoffer label textarea,
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .germanoffer label textarea,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .germanoffer label textarea,
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form .italianoffer label textarea,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form .italianoffer label textarea {
+  width: 12vw;
+  height: 7vh;
+}
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form input,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form input {
+  display: none;
+}
+.admin-dash-applications-container .sections-container .content-section .selectedOffer form button,
+.admin-dash-job-offers-container .sections-container .content-section .selectedOffer form button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.admin-dash-applications-container .sections-container .newOfferSection,
+.admin-dash-job-offers-container .sections-container .newOfferSection {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00a181;
+}
+.admin-dash-applications-container .sections-container .newOfferSection form,
+.admin-dash-job-offers-container .sections-container .newOfferSection form {
+  width: 90vw;
+  height: 90vh;
+  margin-left: 5vw;
+}
+.admin-dash-applications-container .sections-container .newOfferSection form .englishoffer,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .englishoffer,
+.admin-dash-applications-container .sections-container .newOfferSection form .germanoffer,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .germanoffer,
+.admin-dash-applications-container .sections-container .newOfferSection form .italianoffer,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .italianoffer {
+  display: flex;
+}
+.admin-dash-applications-container .sections-container .newOfferSection form .englishoffer label,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .englishoffer label,
+.admin-dash-applications-container .sections-container .newOfferSection form .germanoffer label,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .germanoffer label,
+.admin-dash-applications-container .sections-container .newOfferSection form .italianoffer label,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .italianoffer label {
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-bottom: 3vh;
+}
+.admin-dash-applications-container .sections-container .newOfferSection form .englishoffer label textarea,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .englishoffer label textarea,
+.admin-dash-applications-container .sections-container .newOfferSection form .germanoffer label textarea,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .germanoffer label textarea,
+.admin-dash-applications-container .sections-container .newOfferSection form .italianoffer label textarea,
+.admin-dash-job-offers-container .sections-container .newOfferSection form .italianoffer label textarea {
+  border: none;
+  resize: none;
+  width: 20vw;
+  height: 10vh;
+}
+.admin-dash-applications-container .sections-container .newOfferSection form input,
+.admin-dash-job-offers-container .sections-container .newOfferSection form input {
+  display: none;
+}
+.admin-dash-applications-container .sections-container .newOfferSection form button,
+.admin-dash-job-offers-container .sections-container .newOfferSection form button {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }

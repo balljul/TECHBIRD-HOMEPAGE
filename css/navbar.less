@@ -8,18 +8,47 @@
 .nav-container{
     // display: flex;
 
-    
-    .langSwitch{
-        select,button{
-            height: 2vh;
-            width: 8vw;
-            font-size: 15px;
-            border: solid @persiangreen 2px;
-            outline: none;
-            background-color: @wildsand;
-        }
+    .navbar-head{
+        .langSwitch, .logout-btn{
+            select,button{
+                height: auto;
+                width: auto;
+                border-style: dashed;
+                border: solid @persiangreen 1px;
+                outline: none;
+                background-color: @wildsand;
+                font-family: 'tekosemibold';
+                padding: 3px;
 
+                @media (min-width: 1400px){
+                    font-size: 26px;
+                }
+                @media(min-width: 1200px) and (max-width: 1399px){
+                    font-size: 23px;
+                }
+                @media(min-width: 992px) and (max-width: 1199px){
+                    font-size: 21px;
+                }
+                @media(min-width: 768px) and (max-width: 991px){
+                    font-size: 18px;
+                }
+                @media(min-width: 576px) and (max-width: 767px){
+                    font-size: 16px;            
+                }
+                @media(min-width: 425px) and (max-width: 575px){
+                    font-size: 14px;
+                }
+                @media(min-width: 375px) and (max-width: 424px){
+                    font-size: 13px;
+                }
+                @media(min-width: 320px) and (max-width: 374px){
+                    font-size: 12px;
+                }
+            }
+        }
+     
     }
+
 
     nav.navbar{
         
@@ -49,6 +78,10 @@
         }
 
         .nav-logo{
+
+            @media (min-width: 0) and (max-width: 425px){
+                display: none;
+            }
             display: flex;
             justify-content: center;        
             
@@ -68,55 +101,53 @@
             justify-content: center;
 
             .nav-text{
+                @media (max-width: 425px){
+                    height: 8vh;
+
+                }
                 margin: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 14vw;
+
                 @media (min-width: 1400px){
                     width: 1320px;
-                }
-                @media(min-width: 1200px) and (max-width: 1399px){
-                    width: 1140px;
-                }
-                @media(min-width: 992px) and (max-width: 1199px){
-                    width: 960px;
-                }
-                @media(min-width: 768px) and (max-width: 991px){
-                    width: 720px;
-                }
-                @media(min-width: 576px) and (max-width: 767px){
-                    width: 540px;
-                }
-                @media(min-width: 0px) and (max-width: 575px){
-                    width: 320px;
-                }
-
-                height: 100%;
-                font-family: 'tekoregular', sans-serif;
-        
-                @media (min-width: 1400px){
                     font-size: 26px;
                 }
                 @media(min-width: 1200px) and (max-width: 1399px){
+                    width: 1140px;
                     font-size: 23px;
                 }
                 @media(min-width: 992px) and (max-width: 1199px){
+                    width: 960px;
                     font-size: 21px;
                 }
                 @media(min-width: 768px) and (max-width: 991px){
+                    width: 720px;
                     font-size: 18px;
                 }
                 @media(min-width: 576px) and (max-width: 767px){
+                    width: 540px;
                     font-size: 16px;            
                 }
-                @media(min-width: 345px) and (max-width: 575px){
+                @media(min-width: 425px) and (max-width: 575px){
+                    width: 320px;
                     font-size: 14px;
                 }
-                @media(min-width: 0px) and (max-width: 344px){
+                @media(min-width: 375px) and (max-width: 424px){
+                    width: 100vw;
+                    font-size: 13px;
+                }
+                @media(min-width: 320px) and (max-width: 374px){
+                    width: 100vw;
                     font-size: 12px;
                 }
-            
+
+                    
+                height: 100%;
+                font-family: 'tekoregular', sans-serif;
+                
 
                 a{
                     text-decoration: none;           

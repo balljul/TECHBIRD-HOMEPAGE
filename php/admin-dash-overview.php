@@ -51,6 +51,7 @@
 <body class="admin-dash-overview-container">
     <?php
         include 'navbar.php';
+        require 'loginProcess.php';
     ?>
 
         <h1 class="overview-title text-uppercase center text-center">

@@ -18,7 +18,7 @@
        <a href="index.php"><img src="../img/Logo/Logo Designs TECHBIRD/Icon only.svg" alt="Error loading Logo"></a>
     </div>
 
-    <div class="footer-socials icon">
+    <div class="footer-socials icon center text-center">
         <a href="https://youtube.com"><img src="../img/icons/Footer/youtube.png" alt=""></a>
         <a href="https://instagram.com"><img src="../img/icons/Footer/instagram.png" alt=""></a>
         <a href="https://facebook.com"><img src="../img/icons/Footer/facebook.png" alt=""></a>

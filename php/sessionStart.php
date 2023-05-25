@@ -16,6 +16,7 @@ session_start();
         $_SESSION['langSwitchSetActiveEN'] = "selected";
         $_SESSION['langSwitchSetActiveDE'] = "";
         $_SESSION['langSwitchSetActiveIT'] = "";
+
     }
     else{
 
@@ -28,13 +29,14 @@ session_start();
             $_SESSION['langSwitchSetActiveEN'] = ""; 
             $_SESSION['langSwitchSetActiveDE'] = "selected";
             $_SESSION['langSwitchSetActiveIT'] = "";
+
         }
         else if($_SESSION['lang'] == "it"){   
             $_SESSION['langSwitchSetActiveEN'] = ""; 
             $_SESSION['langSwitchSetActiveDE'] = "";
             $_SESSION['langSwitchSetActiveIT'] = "selected";
-        }
 
+        }
     }
 
 

@@ -50,27 +50,26 @@
 </head>
 <body class="employees-container bg-light ">
     <?php 
-    include 'navbar.php';
-    
-    $TECHBIRD_EMPLOYEES_TITLE_H1 = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_EMPLOYEES_TITLE_H1'";
-    $TECHBIRD_EMPLOYEES_TITLE_H2 = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_EMPLOYEES_TITLE_H2'";
-    $TECHBIRD_EMPLOYEES_TITLE_TEXT = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_EMPLOYEES_TITLE_TEXT'";
-
-    
+      include 'navbar.php';
+      
+      $TECHBIRD_EMPLOYEES_TITLE_H1 = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_EMPLOYEES_TITLE_H1'";
+      $TECHBIRD_EMPLOYEES_TITLE_H2 = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_EMPLOYEES_TITLE_H2'";
+      $TECHBIRD_EMPLOYEES_TITLE_TEXT = "SELECT * FROM `texts` WHERE `textkey` = 'TECHBIRD_EMPLOYEES_TITLE_TEXT'";    
     ?>
 
-    
+    <!-- Intro Text -->
     <div class="heading-text text-center full-height bg-employees-entry">
         <h1 class="heading text-ripelemon "><?php echo retrieveText($TECHBIRD_EMPLOYEES_TITLE_H1); ?></h1>
         <p class="center">
-        <span class="text-persiangreen heading-2"><?php echo retrieveText($TECHBIRD_EMPLOYEES_TITLE_H2); ?></span>
-        <span class="text-light ">
-        <br>
-        <?php echo retrieveText($TECHBIRD_EMPLOYEES_TITLE_TEXT); ?>
-        </span>
+          <span class="text-persiangreen heading-2"><?php echo retrieveText($TECHBIRD_EMPLOYEES_TITLE_H2); ?></span>
+          <span class="text-light ">
+          <br>
+          <?php echo retrieveText($TECHBIRD_EMPLOYEES_TITLE_TEXT); ?>
+          </span>
         </p>
     </div>
        
+    <!-- Content -->
     <div class="employee-profiles-container center text-center">
     
 
@@ -93,9 +92,9 @@
 
     </div>
     
-<?php
-  include 'footer.php';
-?>
+  <?php
+    include 'footer.php';
+  ?>
 
 </body>
 </html>

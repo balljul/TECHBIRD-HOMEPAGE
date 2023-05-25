@@ -23,7 +23,6 @@ html, body{
 
 .heading-2{
     font-size: 400%;
-    // width: 100%;
     font-family: 'tekosemibold';    
 }
 
@@ -294,26 +293,105 @@ html, body{
         height: 100vh;
 
         h1.heading{
-            padding-top:10vh;
+            padding-top:5vh;
+            @media (min-width: 1400px){
+                font-size: 200px;
+            }
+            @media(min-width: 1200px) and (max-width: 1399px){
+                font-size: 170px;
+            }
+            @media(min-width: 992px) and (max-width: 1199px){
+                font-size: 140px;
+            }
+            @media(min-width: 768px) and (max-width: 991px){
+                font-size: 110px;
+            }
+            @media(min-width: 576px) and (max-width: 767px){
+                font-size: 80px;
+            }
+            @media(min-width: 321px) and (max-width: 575px){
+                font-size: 55px;
+            }
+            @media(min-width: 0px) and (max-width: 320px){
+                font-size: 40px;
+            } 
         }
 
         .icon{
-            margin-top: 10vh;
+            margin-top: 5vh;
             display: flex;
             justify-content: center;
 
             img{
-                width: 200px;
-                height: 200px;
+                @media (min-width: 1400px){
+                    height: 200px;
+                    width: 200px;
+                }
+                @media(min-width: 1200px) and (max-width: 1399px){
+                    height: 160px;
+                    width: 160px;
+                }
+                @media(min-width: 992px) and (max-width: 1199px){
+                    height: 140px;
+                    width: 140px;
+                }
+                @media(min-width: 768px) and (max-width: 991px){
+                    width: 140px;
+                    height: 140px;
+                }
+                @media(min-width: 576px) and (max-width: 767px){
+                    width: 120px;
+                    height: 120px;
+                }
+                @media(min-width: 321px) and (max-width: 575px){
+                    width: 100px;
+                    height: 100px;
+                }
+                @media(min-width: 0px) and (max-width: 320px){
+                    width: 80px;
+                    height: 80px;
+                } 
             }
         
         }
         
         p{
-            padding-top: 10vh;
-            width: 500px;
-            max-width: 80vw;
-            font-size: 30px;
+            padding-top: 5vh;
+            @media (min-width: 1400px){
+                font-size: 40px;
+                width: 1000px;
+            }
+            @media(min-width: 1200px) and (max-width: 1399px){
+                padding-top: 10vh;
+                font-size: 40px;
+                width: 1000px;
+            }
+            @media(min-width: 992px) and (max-width: 1199px){
+                padding-top: 10vh;
+                font-size: 35px;
+                width: 800px;
+
+            }
+            @media(min-width: 768px) and (max-width: 991px){
+                padding-top: 10vh;
+                font-size: 35px;
+                width: 600px;
+            }
+            @media(min-width: 576px) and (max-width: 767px){
+                padding-top: 10vh;
+                font-size: 30px;
+                width: 400px;
+            }
+            @media(min-width: 321px) and (max-width: 575px){
+                padding-top: 10vh;
+                font-size: 25px;
+                width: 90vw;
+            }
+            @media(min-width: 0px) and (max-width: 320px){
+                padding-top: 10vh;
+                font-size: 20px;
+                width: 90vw;
+            } 
             
         }
 
@@ -478,22 +556,66 @@ html, body{
         }
         .partners-entry-text-subcontainer{
             display: flex;
+           h1{
+            @media (min-width: 1400px){
+                font-size: 150px;
+            }
+            @media(min-width: 1200px) and (max-width: 1399px){
+                font-size: 140px;
+            }
+            @media(min-width: 992px) and (max-width: 1199px){
+                font-size: 120px;
+            }
+            @media(min-width: 768px) and (max-width: 991px){
+                font-size: 90px;
+            }
+            @media(min-width: 576px) and (max-width: 767px){
+                font-size: 70px;
+            }
+            @media(min-width: 321px) and (max-width: 575px){
+                font-size: 50px;
+            }
+            @media(min-width: 0px) and (max-width: 320px){
+                font-size: 40px;
+            } 
+           }
 
             .icon{
                 img{
-                    width: 64px;
                     height: auto;
+                    @media (min-width: 1400px){
+                        width: 96px;
+                    }
+                    @media(min-width: 1200px) and (max-width: 1399px){
+                        width: 91px;
+                    }
+                    @media(min-width: 992px) and (max-width: 1199px){
+                        width: 83px;
+                    }
+                    @media(min-width: 768px) and (max-width: 991px){
+                        width: 76px;
+                    }
+                    @media(min-width: 576px) and (max-width: 767px){
+                        width: 68px;
+                    }
+                    @media(min-width: 321px) and (max-width: 575px){
+                        width: 62px;
+                    }
+                    @media(min-width: 0px) and (max-width: 320px){
+                        width: 57px;
+                    } 
                 }
             }
 
             .customer-contact-button{
-                margin-top: 4vh;
-                width: 10vw;
-                height: 6vh;
+                margin-top: 2vh;
+                width: 240px;
+                height: 55px;
+                font-size: 30px;
                 outline: none;
                 border: solid @persiangreen 4px;
                 background-color: @sherpablue;
-                font-size: 40px;
+               
             }
         }
     }
@@ -667,36 +789,35 @@ html, body{
             .icon{
                 display: flex;
                 justify-content: center;
-                // padding-top: 7.5%;
                 img{
                     margin-bottom: 5vh;
                     @media (min-width: 1400px){
-                        width: 200px;
-                        height: 200px;    
+                        width: 280px;
+                        height: 280px;    
                     }
                     @media(min-width: 1200px) and (max-width: 1399px){
-                        width: 160px;
-                        height: 160px;
+                        width: 250px;
+                        height: 250px;
                     }
                     @media(min-width: 992px) and (max-width: 1199px){
-                        width: 140px;
-                        height: 140px;
+                        width: 200px;
+                        height: 200px;
                     }
                     @media(min-width: 768px) and (max-width: 991px){
-                        width: 120px;
-                        height: 120px;
+                        width: 150px;
+                        height: 150px;
                     }
                     @media(min-width: 576px) and (max-width: 767px) {
-                        width: 100px; 
-                        height: 100px;                   
+                        width: 140px; 
+                        height: 140px;                   
                     }
                     @media(min-width: 321px) and (max-width: 575px){
-                        width: 90px;
-                        height: 90px;
+                        width: 130px;
+                        height: 130px;
                     }
                     @media(min-width: 0px) and (max-width: 320px){
-                        width: 80px;
-                        height: 80px;
+                        width: 115px;
+                        height: 115px;
                     } 
 
                 }
@@ -749,14 +870,16 @@ html, body{
         &.bg-employees-entry{
             background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(../img/Headers/Employees-IconHeader.png);
         }
-        h1{
+        h1.heading{
             margin-top: 15vh; 
-            padding-bottom: 5vh;
+            // padding-bottom: 5vh;
             @media (min-width: 1400px){
-                font-size: 80px;
+                font-size: 180px;
+                margin-top: 5vh;
             }
             @media(min-width: 1200px) and (max-width: 1399px){
                 font-size: 170px;
+                margin-top: 10vh;
             }
             @media(min-width: 992px) and (max-width: 1199px){
                 font-size: 140px;
@@ -766,62 +889,63 @@ html, body{
             }
             @media(min-width: 576px) and (max-width: 767px){
                 font-size: 80px;
+                margin-top: 10vh;
             }
             @media(min-width: 321px) and (max-width: 575px){
-                font-size: 55px;
+                font-size: 65px;
+                margin-top: 5vh;
             }
             @media(min-width: 0px) and (max-width: 320px){
-                font-size: 40px;
+                font-size: 50px;
+                margin-top: 5vh;
             } 
         }
         .heading-2{
             @media (min-width: 1400px){
-                font-size: 65px;
+                font-size: 80px;
             }
             @media(min-width: 1200px) and (max-width: 1399px){
-                font-size: 55px;
+                font-size: 70px;
             }
             @media(min-width: 992px) and (max-width: 1199px){
-                font-size: 50px;
+                font-size: 60px;
             }
             @media(min-width: 768px) and (max-width: 991px){
-                font-size: 40px;
+                font-size: 50px;
             }
             @media(min-width: 576px) and (max-width: 767px){
-                font-size: 35px;
+                font-size: 40px;
             }
             @media(min-width: 321px) and (max-width: 575px){
-                font-size: 30px;
+                font-size: 35px;
             }
             @media(min-width: 0px) and (max-width: 320px){
-                font-size: 25px;
+                font-size: 30px;
             } 
         }
         p{
             width: 60vw;
-
             span{
-
                 @media (min-width: 1400px){
                     font-size: 40px;
                 }
                 @media(min-width: 1200px) and (max-width: 1399px){
-                    font-size: 170px;
+                    font-size: 35px;
                 }
                 @media(min-width: 992px) and (max-width: 1199px){
-                    font-size: 140px;
+                    font-size: 30px;
                 }
                 @media(min-width: 768px) and (max-width: 991px){
-                    font-size: 110px;
+                    font-size: 25px;
                 }
                 @media(min-width: 576px) and (max-width: 767px){
-                    font-size: 80px;
+                    font-size: 25px;
                 }
                 @media(min-width: 321px) and (max-width: 575px){
-                    font-size: 55px;
+                    font-size: 20px;
                 }
                 @media(min-width: 0px) and (max-width: 320px){
-                    font-size: 40px;
+                    font-size: 18px;
                 } 
             }
         }
@@ -874,39 +998,170 @@ html, body{
             background-position: center;
             width: 100vw;
             height: 55vh;
-            
+
+            &.bg-right{
+                background-position: left;
+            }
+            &.bg-left{
+                background-position: right;
+            }
+
             .text-right{
                 width: 60vw;
                 margin-left: 40vw;
-
+                @media (min-width: 1300px) and (max-width: 1500px){
+                    width: 70vw;
+                    margin-left: 30vw;
+                }
+                @media (min-width: 1150px) and (max-width: 1299px){
+                    width: 80vw;
+                    margin-left: 20vw;
+                }
+                @media (min-width: 1001px) and (max-width: 1149px){
+                    width: 90vw;
+                    margin-left: 10vw;
+                }
+                @media (min-width: 0px) and (max-width: 1000px){
+                    width: 100vw;
+                    margin: 0;
+                }
             }
 
             .text-left{
                 width: 60vw;
                 margin-right: 40vw;
+                @media (min-width: 1300px) and (max-width: 1500px){
+                    width: 70vw;
+                    margin-right: 30vw;
+                }
+                @media (min-width: 1150px) and (max-width: 1299px){
+                    width: 80vw;
+                    margin-right: 20vw;
+                }
+                @media (min-width: 1001px) and (max-width: 1149px){
+                    width: 90vw;
+                    margin-right: 10vw;
+                }
+                @media (min-width: 0px) and (max-width: 1000px){
+                    width: 100vw;
+                    margin: 0;
+                }
             }
 
             .text-left, .text-right{
                 padding-top: 2vh;
-                .heading-2{
-                    font-size: 300%;
+                .heading{
+                    @media (min-width: 1400px){
+                        font-size: 80px;
+                    }
+                    @media(min-width: 1200px) and (max-width: 1399px){
+                        font-size: 80px;
+                    }
+                    @media(min-width: 992px) and (max-width: 1199px){
+                        font-size: 90px;
+                    }
+                    @media(min-width: 768px) and (max-width: 991px){
+                        font-size: 60px;
+                    }
+                    @media(min-width: 576px) and (max-width: 767px){
+                        font-size: 45px;
+                    }
+                    @media(min-width: 321px) and (max-width: 575px){
+                        font-size: 35px;
+                    }
+                    @media(min-width: 0px) and (max-width: 320px){
+                        font-size: 30px;
+                    } 
                 }
+                .heading-2{
+                    @media (min-width: 1400px){
+                        font-size: 40px;
+                    }
+                    @media(min-width: 1200px) and (max-width: 1399px){
+                        font-size: 40px;
+                    }
+                    @media(min-width: 992px) and (max-width: 1199px){
+                        font-size: 45px;
+                    }
+                    @media(min-width: 768px) and (max-width: 991px){
+                        font-size: 35px;
+                    }
+                    @media(min-width: 576px) and (max-width: 767px){
+                        font-size: 30px;
+                    }
+                    @media(min-width: 321px) and (max-width: 575px){
+                        font-size: 25px;
+                    }
+                    @media(min-width: 0px) and (max-width: 320px){
+                        font-size: 20px;
+                    } 
+                }
+                .jobdescription{
+                    @media (min-width: 1400px){
+                        font-size: 30px;
+                    }
+                    @media(min-width: 1200px) and (max-width: 1399px){
+                        font-size: 30px;
+                    }
+                    @media(min-width: 992px) and (max-width: 1199px){
+                        font-size: 32px;
+                    }
+                    @media(min-width: 768px) and (max-width: 991px){
+                        font-size: 25px;
+                    }
+                    @media(min-width: 576px) and (max-width: 767px){
+                        font-size: 25px;
+                    }
+                    @media(min-width: 321px) and (max-width: 575px){
+                        font-size: 20px;
+                    }
+                    @media(min-width: 0px) and (max-width: 320px){
+                        font-size: 15px;
+                    }                }
                 .job-entry-button{
                     margin-top: 3vh;
-                    width: 10vw;
-                    height: 5vh;
-                    font-size: 25px;
+                    @media (min-width: 1400px){
+                        width: 170px;
+                        height: 50px;
+                        font-size: 30px;
+                    }
+                    @media(min-width: 1200px) and (max-width: 1399px){
+                        width: 170px;
+                        height: 50px;
+                        font-size: 30px;
+                    }
+                    @media(min-width: 992px) and (max-width: 1199px){
+                        width: 150px;
+                        height: 40px;
+                        font-size: 25px;
+                    }
+                    @media(min-width: 768px) and (max-width: 991px){
+                        width: 130px;
+                        height: 40px;
+                        font-size: 25px;
+                    }
+                    @media(min-width: 576px) and (max-width: 767px){
+                        width: 100px;
+                        height: 40px;
+                        font-size: 20px;
+                    }
+                    @media(min-width: 321px) and (max-width: 575px){
+                        width: 100px;
+                        height: 35px;
+                        font-size: 20px;
+                    }
+                    @media(min-width: 0px) and (max-width: 320px){
+                        width: 90px;
+                        height: 30px;
+                        font-size: 15px;
+                    }   
                     outline: none;
                     border: solid @persiangreen 3px;
 
-                    &.element3,&.element4{
-                        border: solid @yellowgreen 3px;
-                    }
+                 
                 }
 
-                .jobdescription{
-                    font-size: 180%;
-                }
+                
             }
            
         }
@@ -985,7 +1240,7 @@ html, body{
                 }
                 @media(min-width: 768px) and (max-width: 991px){
                     font-size: 25px;
-                    width: 20vw;
+                    width: 30vw;
                     height: 6vh;
                     transition: width 0.4s ease-in-out;
 
@@ -996,7 +1251,7 @@ html, body{
                 }
                 @media(min-width: 576px) and (max-width: 767px){
                     font-size: 25px;
-                    width: 20vw;
+                    width: 30vw;
                     height: 6vh;
                     transition: width 0.4s ease-in-out;
 
@@ -1007,7 +1262,7 @@ html, body{
                 }
                 @media(min-width: 321px) and (max-width: 575px){
                     font-size: 20px;
-                    width: 25vw;
+                    width: 35vw;
                     height: 5vh;
                     transition: width 0.4s ease-in-out;
 
@@ -1018,7 +1273,7 @@ html, body{
                 }
                 @media(min-width: 0px) and (max-width: 320px){
                     font-size: 20px;
-                    width: 25vw;
+                    width: 35vw;
                     height: 5vh;
                     transition: width 0.4s ease-in-out;
 
@@ -1155,13 +1410,13 @@ html, body{
                 @media(min-width: 321px) and (max-width: 575px){
                     font-size: 20px;
                     width: 25vw;
-                    height: 5vh;
+                    height: 7vh;
                             
                 }
                 @media(min-width: 0px) and (max-width: 320px){
                     font-size: 20px;
                     width: 25vw;
-                    height: 5vh;
+                    height: 7vh;
                     
                 }
             }
@@ -1249,7 +1504,7 @@ html, body{
 
 
             // Background Color 
-            &.newApplications,&.markedApplications,&.currenJobOffers{
+            &.newApplications,&.markedApplications,&.currentJobOffers{
                 background-color: @yellowgreen;
             }
             &.seenApplications{
@@ -1265,7 +1520,7 @@ html, body{
                 margin-top: 2vh;
             }
 
-            .application{
+            .application,.offer{
                 margin-left: 9vw;
                 display: flex;
 
@@ -1277,7 +1532,7 @@ html, body{
                         margin-left: 0.5vw;
                         outline: none;
                         border: none;
-                        background-color: @yellowgreen;
+                        background-color: transparent;
                         img{
                             width: 30px;
                             height: 30px;
@@ -1287,7 +1542,7 @@ html, body{
             }
 
             .selected-application{
-               
+
                .application-title{
                     .heading{
                     font-size: 100px;
@@ -1303,25 +1558,118 @@ html, body{
                 margin-left: 5vw;
                 font-size: 45px;
                }
+               .buttons-container{
+                display: flex;
+                justify-content: space-between;
+                    .applications-button-container{
+                        margin-left: 5vw;
+                        margin-top: 30vh;
+                            form{
+                                input{
+                                    display: none;
+                                }
+                                .CVbutton{
+                                    font-size: 30px;
+                                    outline: none;
+                                    border: solid @persiangreen 5px;
+                                    width: 10vw;
+                                    height: 5vh;
+                                    margin-bottom: 1vh;
+                                }
 
-               .applications-button-container{
-                    form{
-                        .CVbutton{
-
+                                .mailbutton{   
+                                    font-size: 30px;
+                                    outline: none;
+                                    border: solid @yellowgreen 5px;
+                                    width: 10vw;
+                                    height: 5vh;
+                                }
+                            }
+                        }
+                    .icon-container{
+                        margin-top: 24vh;
+                        margin-right: 5vw;
+                        
+                        input{
+                            display: none;
                         }
 
-                        .mailbutton{
+                        button{
+                            background-color: transparent;
+                            border: none;
+                        }
+                    }
+                }   
+            }
 
+            .selectedOffer{
+                form{
+                    width: 45vw;
+                    height: 90vh;
+                    margin-left: 2.5vw;
+                    .englishoffer,.germanoffer, .italianoffer{
+                        display: flex;
+                        label{  
+                            margin-left: 2vw;
+                            margin-right: 2vw;
+                            textarea{
+                                width: 12vw;
+                                height: 7vh;
+                            }
+                        }
+                    }
+
+                    input{
+                        display: none;
+                    }
+                    
+                    button{
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                    }
+                }
+            }
+
+        }
+
+        .newOfferSection{
+            height: 100vh;
+            width: 100vw;
+            background-color: @persiangreen;
+            
+            form{
+                width: 90vw;
+                height: 90vh;
+                margin-left: 5vw;
+                .englishoffer,.germanoffer, .italianoffer{
+                    display: flex;
+                    label{  
+                        margin-right: 5vw;
+                        margin-left: 5vw;
+                        margin-bottom: 3vh;
+                        textarea{
+                            border: none;
+                            resize: none;
+                            width: 20vw;
+                            height: 10vh;
                         }
                     }
                 }
-                .icon-container{
-                    
+
+                input{
+                    display: none;
                 }
-               
+                
+                button{
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                }
             }
         }
     }
+
 
 }
 

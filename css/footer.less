@@ -6,20 +6,45 @@
 
 .footer-container{
     background-color: @sherpablue;
-    height: 70vh;
+    min-height: 70vh;
     width: 100vw;
     
     .footer-logo{
-        padding-top: 3vh;
+        margin-top: 3vh;
         margin-bottom: -1vh;
         height: 20vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
+        // overflow: hidden;
        img{
-        height: 20vh;
-        width: auto;
-       }
+        height: auto;
+        @media (min-width: 1400px){
+            width: 210px;
+        }
+        @media(min-width: 1200px) and (max-width: 1399px){
+            width: 210px;
+           }
+        @media(min-width: 992px) and (max-width: 1199px){
+            width: 180px;
+        }
+        @media(min-width: 768px) and (max-width: 991px){
+            width: 155px;
+        }
+        @media(min-width: 576px) and (max-width: 767px){
+            width: 140px;
+        }
+        @media(min-width: 425px) and (max-width: 575px){
+            width: 140px;    
+        }
+        @media(min-width: 375px) and (max-width: 424px){
+            width: 130px;    
+        }
+        @media(min-width: 0px) and (max-width: 374px){
+            width: 120px;    
+        }
+        }
     }
 
     .footer-socials{
@@ -27,15 +52,67 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 3vh;
-        height: 10vh;
-       img{
-        margin-right: 16.5px;
-        margin-left: 16.5px;
-       }
-    }
 
+       img{
+        overflow: hidden;
+        height: auto;
+        width: 10vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+        @media (min-width: 1400px){
+            max-width: 80px;
+        }
+        @media(min-width: 1200px) and (max-width: 1399px){
+            max-width: 70px;
+           }
+        @media(min-width: 992px) and (max-width: 1199px){
+            max-width: 65px;
+        }
+        @media(min-width: 768px) and (max-width: 991px){
+            max-width: 60px;
+        }
+        @media(min-width: 576px) and (max-width: 767px){
+            max-width: 45px;
+        }
+        @media(min-width: 425px) and (max-width: 575px){
+            max-width: 45px;    
+        }
+        @media(min-width: 375px) and (max-width: 424px){
+            max-width: 40px;    
+        }
+        @media(min-width: 0px) and (max-width: 374px){
+            max-width: 30px;    
+        }
+        }
+       }
+    
     .footer-links{
         p{
+            @media (min-width: 1400px){
+                font-size: 60px;
+            }
+            @media(min-width: 1200px) and (max-width: 1399px){
+                font-size: 60px;
+            }
+            @media(min-width: 992px) and (max-width: 1199px){
+                font-size: 50px;
+            }
+            @media(min-width: 768px) and (max-width: 991px){
+                font-size: 50px;
+            }
+            @media(min-width: 576px) and (max-width: 767px){
+                font-size: 45px;
+            }
+            @media(min-width: 425px) and (max-width: 575px){
+                font-size: 40px;
+            }
+            @media(min-width: 375px) and (max-width: 424px){
+                font-size: 35px;
+            }
+            @media(min-width: 0px) and (max-width: 374px){
+                font-size: 30px;
+            }
             margin-top: 1vh;
             margin-bottom: 1vh;
         }

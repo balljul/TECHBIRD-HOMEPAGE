@@ -3,14 +3,82 @@
   padding: 0;
   overflow-x: hidden;
 }
-.nav-container .langSwitch select,
-.nav-container .langSwitch button {
-  height: 2vh;
-  width: 8vw;
-  font-size: 15px;
-  border: solid #00a181 2px;
+.nav-container .navbar-head .langSwitch select,
+.nav-container .navbar-head .logout-btn select,
+.nav-container .navbar-head .langSwitch button,
+.nav-container .navbar-head .logout-btn button {
+  height: auto;
+  width: auto;
+  border-style: dashed;
+  border: solid #00a181 1px;
   outline: none;
   background-color: #f4f4f4;
+  font-family: 'tekosemibold';
+  padding: 3px;
+}
+@media (min-width: 1400px) {
+  .nav-container .navbar-head .langSwitch select,
+  .nav-container .navbar-head .logout-btn select,
+  .nav-container .navbar-head .langSwitch button,
+  .nav-container .navbar-head .logout-btn button {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .nav-container .navbar-head .langSwitch select,
+  .nav-container .navbar-head .logout-btn select,
+  .nav-container .navbar-head .langSwitch button,
+  .nav-container .navbar-head .logout-btn button {
+    font-size: 23px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-container .navbar-head .langSwitch select,
+  .nav-container .navbar-head .logout-btn select,
+  .nav-container .navbar-head .langSwitch button,
+  .nav-container .navbar-head .logout-btn button {
+    font-size: 21px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-container .navbar-head .langSwitch select,
+  .nav-container .navbar-head .logout-btn select,
+  .nav-container .navbar-head .langSwitch button,
+  .nav-container .navbar-head .logout-btn button {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .nav-container .navbar-head .langSwitch select,
+  .nav-container .navbar-head .logout-btn select,
+  .nav-container .navbar-head .langSwitch button,
+  .nav-container .navbar-head .logout-btn button {
+    font-size: 16px;
+  }
+}
+@media (min-width: 425px) and (max-width: 575px) {
+  .nav-container .navbar-head .langSwitch select,
+  .nav-container .navbar-head .logout-btn select,
+  .nav-container .navbar-head .langSwitch button,
+  .nav-container .navbar-head .logout-btn button {
+    font-size: 14px;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .nav-container .navbar-head .langSwitch select,
+  .nav-container .navbar-head .logout-btn select,
+  .nav-container .navbar-head .langSwitch button,
+  .nav-container .navbar-head .logout-btn button {
+    font-size: 13px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .nav-container .navbar-head .langSwitch select,
+  .nav-container .navbar-head .logout-btn select,
+  .nav-container .navbar-head .langSwitch button,
+  .nav-container .navbar-head .logout-btn button {
+    font-size: 12px;
+  }
 }
 .nav-container nav.navbar {
   display: flex;
@@ -53,6 +121,11 @@
   display: flex;
   justify-content: center;
 }
+@media (min-width: 0) and (max-width: 425px) {
+  .nav-container nav.navbar .nav-logo {
+    display: none;
+  }
+}
 .nav-container nav.navbar .nav-logo img {
   padding-left: 10px;
   padding-right: 10px;
@@ -75,68 +148,56 @@
   height: 100%;
   font-family: 'tekoregular', sans-serif;
 }
+@media (max-width: 425px) {
+  .nav-container nav.navbar .nav-contents .nav-text {
+    height: 8vh;
+  }
+}
 @media (min-width: 1400px) {
   .nav-container nav.navbar .nav-contents .nav-text {
     width: 1320px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .nav-container nav.navbar .nav-contents .nav-text {
-    width: 1140px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .nav-container nav.navbar .nav-contents .nav-text {
-    width: 960px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .nav-container nav.navbar .nav-contents .nav-text {
-    width: 720px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .nav-container nav.navbar .nav-contents .nav-text {
-    width: 540px;
-  }
-}
-@media (min-width: 0px) and (max-width: 575px) {
-  .nav-container nav.navbar .nav-contents .nav-text {
-    width: 320px;
-  }
-}
-@media (min-width: 1400px) {
-  .nav-container nav.navbar .nav-contents .nav-text {
     font-size: 26px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .nav-container nav.navbar .nav-contents .nav-text {
+    width: 1140px;
     font-size: 23px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav-container nav.navbar .nav-contents .nav-text {
+    width: 960px;
     font-size: 21px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .nav-container nav.navbar .nav-contents .nav-text {
+    width: 720px;
     font-size: 18px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .nav-container nav.navbar .nav-contents .nav-text {
+    width: 540px;
     font-size: 16px;
   }
 }
-@media (min-width: 345px) and (max-width: 575px) {
+@media (min-width: 425px) and (max-width: 575px) {
   .nav-container nav.navbar .nav-contents .nav-text {
+    width: 320px;
     font-size: 14px;
   }
 }
-@media (min-width: 0px) and (max-width: 344px) {
+@media (min-width: 375px) and (max-width: 424px) {
   .nav-container nav.navbar .nav-contents .nav-text {
+    width: 100vw;
+    font-size: 13px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .nav-container nav.navbar .nav-contents .nav-text {
+    width: 100vw;
     font-size: 12px;
   }
 }
