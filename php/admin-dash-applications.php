@@ -46,6 +46,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
+    <link rel="icon" href="../img/Logo/Logo Designs TECHBIRD/Icon only.svg">
     <title>Application Dashboard</title>
 </head>
 <body class="admin-dash-applications-container">
@@ -89,6 +90,8 @@
       $showSelectedMarked = 'style="display: none;"';
       $showUnselectedMarked = '';
 
+      $reloadPage = "header('Refresh:0');";
+
       if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(isset($_POST['jobidUnseen'])){
           $id = $_POST['jobidUnseen'];
@@ -119,21 +122,21 @@
           $id = $_POST['idToMark'];
           $setStatusSQL = "UPDATE `job-applications` SET `status`='m' WHERE `ID` = '$id'";
           $conn->query($setStatusSQL);
-
+          $reloadPage;
         }
 
         if(isset($_POST['ApplicationSeenButtonUnseen'])){
           $id = $_POST['idToSetSeen'];
           $setStatusSQL = "UPDATE `job-applications` SET `status`='s' WHERE `ID` = '$id'";
           $conn->query($setStatusSQL);
-
+          $reloadPage;
         }
 
         if(isset($_POST['ApplicationDeleteButtonUnseen'])){
           $id = $_POST['idToDelete'];
           $setStatusSQL = "DELETE FROM `job-applications` WHERE `ID` = '$id'";
           $conn->query($setStatusSQL);
-
+          $reloadPage;
         }
       }
 

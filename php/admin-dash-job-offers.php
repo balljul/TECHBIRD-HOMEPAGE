@@ -32,9 +32,7 @@
              ((((((                                                             
           ((.                                                                   
                                                                                 
-                                                                                
-                                                                                
-                                                                                
+                                                                                 
                                                                                 
                                                                                                                                                                                   
 ====================================================
@@ -46,6 +44,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
+    <link rel="icon" href="../img/Logo/Logo Designs TECHBIRD/Icon only.svg">
     <title>Job Offer Dashboard</title>
 </head>
 <body class="admin-dash-job-offers-container">
@@ -78,6 +77,7 @@
         $jobdesciptionitNew = '';
         $jobemploymentitNew = '';
         
+        $reloadPage = "header('Refresh:0');";
 
         if($_SERVER["REQUEST_METHOD"] == "POST"){
           if(isset($_POST['openJobOfferButton'])){
@@ -104,6 +104,8 @@
 
             $changeOfferSQL = "UPDATE `jobs` SET `jobnameen`='$jobnameen',`descriptionen`='$jobemploymenten',`employmenten`='$jobemploymenten',`jobnamede`='$jobnamede',`descriptionde`='$jobdesciptionde',`employmentde`='$jobemploymentde',`jobnameit`='$jobnameit',`descriptionit`='$jobdesciptionit',`employmentit`='$jobemploymentit' WHERE `ID` = '$id'";
             $conn->query($changeOfferSQL);
+
+            $reloadPage;
           }
 
           if(isset($_POST['deleteSelectedOffer'])){
@@ -111,6 +113,8 @@
 
             $deleteSql = "DELETE FROM `jobs` WHERE `ID` = $id";
             $conn->query($deleteSql);
+
+            $reloadPage;
           }
 
           if(isset($_POST['saveNewOffer'])){
@@ -141,6 +145,8 @@
             $jobnameitNew = '';
             $jobdesciptionitNew = '';
             $jobemploymentitNew = '';
+
+            $reloadPage;
           }
 
           if(isset($_POST['resetNewOfferForm'])){
@@ -155,6 +161,8 @@
             $jobnameitNew = '';
             $jobdesciptionitNew = '';
             $jobemploymentitNew = '';
+
+            $reloadPage;
           }
 
           if(isset($_POST['dublicateSelectedOffer'])){
@@ -172,6 +180,8 @@
 
             $dublicateOfferSQL = "INSERT INTO `jobs`(`jobnameen`, `descriptionen`, `employmenten`, `jobnamede`, `descriptionde`, `employmentde`, `jobnameit`, `descriptionit`, `employmentit`) VALUES ('$jobnameen','$jobdesciptionen','$jobemploymenten','$jobnamede','$jobdesciptionde','$jobemploymentde','$jobnameit','$jobdesciptionit','$jobemploymentit')";
             $conn->query($dublicateOfferSQL);
+
+            $reloadPage;
           }
         }
 
@@ -210,30 +220,30 @@
                   <h1 class="heading">ENGLISH</h1>
                   <div class="englishoffer">  
                         
-                        <label for="jobnameEN">Job Title
+                        <label class="job-label" for="jobnameEN">Job Title
                         <textarea name="jobnameEN"><?php echo $row['jobnameen']; ?></textarea>
                         </label>
 
-                        <label for="jobdescriptionEN">Job Desciption
+                        <label class="job-label" for="jobdescriptionEN">Job Desciption
                         <textarea name="jobdescriptionEN"><?php echo $row['descriptionen']; ?></textarea>
                         </label>
 
-                        <label for="employementEN">Employment
+                        <label class="job-label" for="employementEN">Employment
                         <textarea name="employementEN"><?php echo $row['employmenten']; ?></textarea>
                         </label>
                     </div>
                     <h1 class="heading">GERMAN</h1>
                     <div class="germanoffer">
                         
-                        <label for="jobnameDE">Job Title
+                        <label class="job-label" for="jobnameDE">Job Title
                         <textarea name="jobnameDE"><?php echo $row['jobnamede']; ?></textarea>
                         </label>
 
-                        <label for="jobdescriptionDE">Job Desciption
+                        <label class="job-label" for="jobdescriptionDE">Job Desciption
                         <textarea name="jobdescriptionDE"><?php echo $row['descriptionde']; ?></textarea>
                         </label>
                         
-                        <label for="employementDE">Employment
+                        <label class="job-label" for="employementDE">Employment
                         <textarea name="employementDE"><?php echo $row['employmentde']; ?></textarea>
                         </label>
                         
@@ -241,15 +251,15 @@
                     <h1 class="heading">Italian</h1>
                     <div class="italianoffer">
                         
-                        <label for="jobnameIT">Job Title
+                        <label class="job-label" for="jobnameIT">Job Title
                         <textarea name="jobnameIT"><?php echo $row['jobnameit']; ?></textarea>
                         </label>
 
-                        <label for="jobdescriptionIT">Job Desciption
+                        <label class="job-label" for="jobdescriptionIT">Job Desciption
                         <textarea name="jobdescriptionIT"><?php echo $row['descriptionit']; ?></textarea>
                         </label>
 
-                        <label for="employementIT">Employment
+                        <label class="job-label" for="employementIT">Employment
                         <textarea name="employementIT"><?php echo $row['employmentit']; ?></textarea>
                         </label>
 
@@ -274,17 +284,17 @@
                   <h1 class="heading">ENGLISH</h1>
                   <div class="englishoffer">  
                         
-                        <label for="jobnameENnew">Job Title
+                        <label class="job-label" for="jobnameENnew">Job Title
                           <br>
                         <textarea name="jobnameENnew"><?php echo $jobnameenNew; ?></textarea>
                         </label>
 
-                        <label for="jobdescriptionENnew">Job Desciption
+                        <label class="job-label" for="jobdescriptionENnew">Job Desciption
                         <br>
                         <textarea name="jobdescriptionENnew"><?php echo $jobdesciptionenNew; ?></textarea>
                         </label>
 
-                        <label for="employementENnew">Employment
+                        <label class="job-label" for="employementENnew">Employment
                         <br>
                         <textarea name="employementENnew"><?php echo $jobemploymentenNew; ?></textarea>
                         </label>
@@ -292,17 +302,17 @@
                     <h1 class="heading">GERMAN</h1>
                     <div class="germanoffer">
                         
-                        <label for="jobnameDEnew">Job Title
+                        <label class="job-label" for="jobnameDEnew">Job Title
                         <br>
                         <textarea name="jobnameDEnew"><?php echo $jobnamedeNew; ?></textarea>
                         </label>
 
-                        <label for="jobdescriptionDEnew">Job Desciption
+                        <label class="job-label" for="jobdescriptionDEnew">Job Desciption
                         <br>
                         <textarea name="jobdescriptionDEnew"><?php echo $jobdesciptiondeNew; ?></textarea>
                         </label>
                         
-                        <label for="employementDEnew">Employment
+                        <label class="job-label" for="employementDEnew">Employment
                         <br>
                         <textarea name="employementDEnew"><?php echo $jobemploymentdeNew; ?></textarea>
                         </label>
@@ -311,17 +321,17 @@
                     <h1 class="heading">Italian</h1>
                     <div class="italianoffer">
                         
-                        <label for="jobnameITnew">Job Title
+                        <label class="job-label" for="jobnameITnew">Job Title
                         <br>
                         <textarea name="jobnameITnew"><?php echo $jobnameitNew; ?></textarea>
                         </label>
 
-                        <label for="jobdescriptionITnew">Job Desciption
+                        <label class="job-label" for="jobdescriptionITnew">Job Desciption
                         <br>
                         <textarea name="jobdescriptionITnew"><?php echo $jobdesciptionitNew; ?></textarea>
                         </label>
 
-                        <label for="employementITnew">Employment
+                        <label class="job-label" for="employementITnew">Employment
                         <br>
                         <textarea name="employementITnew"><?php echo $jobemploymentitNew; ?></textarea>
                         </label>

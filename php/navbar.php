@@ -1,5 +1,5 @@
-
 <?php
+require 'user-loginProcess.php';
 include 'text-retrieve.php';
 $filename = basename($_SERVER["SCRIPT_FILENAME"], '.php');
 // echo $filename;
@@ -48,6 +48,7 @@ $TECHBIRD_LANGSWITCH_SUBMIT_BUTTON =  "SELECT * FROM `texts` WHERE `textkey` = '
 
         if(isset($_POST['logout-btn']) == TRUE){
             $_SESSION['loginStatus'] = FALSE;
+            header('LOCATION: login.php');
         }
     }
 
@@ -55,6 +56,8 @@ $TECHBIRD_LANGSWITCH_SUBMIT_BUTTON =  "SELECT * FROM `texts` WHERE `textkey` = '
 
     <!-- Language Switch and Logout-->
     <div class="navbar-head">
+
+    <?php if($filename !== 'admin-dash-overview' && $filename !== 'admin-dash-job-offers' && $filename !== 'admin-dash-applications'){ ?>
 
         <div class="langSwitch">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?> ">
@@ -66,7 +69,10 @@ $TECHBIRD_LANGSWITCH_SUBMIT_BUTTON =  "SELECT * FROM `texts` WHERE `textkey` = '
                 <button class="text-sherpablue" type="submit" name="submit"><?php echo retrieveText($TECHBIRD_LANGSWITCH_SUBMIT_BUTTON); ?></button>
             </form>
         </div>
-       
+
+    <?php } ?>
+
+
         <?php if($filename == 'admin-dash-overview' || $filename == 'admin-dash-job-offers' || $filename == 'admin-dash-applications'){ ?>
             <div class="logout-btn">
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">

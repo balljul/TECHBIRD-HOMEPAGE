@@ -45,6 +45,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
+    <link rel="icon" href="../img/Logo/Logo Designs TECHBIRD/Icon only.svg">
     <title>Document</title>
 </head>
 <body>
@@ -71,7 +72,7 @@
         ?>
 
     <div class="history-container">
-        <div class="history-bgimage" style="background-image: url(../img/Headers/History-Header.svg)" ></div>
+        <div class="history-bgimage" style="background-image: url(../img/Headers/History-Header-<?php echo $_SESSION['lang']; ?>.png)" ></div>
        
         <div class="history-content history-bgimage" style="background-image: url(../img/Backgrounds/History/6.png)" >
             <section class="text-center">

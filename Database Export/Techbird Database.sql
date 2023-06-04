@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 16. Mai 2023 um 23:09
+-- Erstellungszeit: 04. Jun 2023 um 17:26
 -- Server-Version: 10.4.25-MariaDB
 -- PHP-Version: 8.1.10
 
@@ -111,83 +111,6 @@ CREATE TABLE `job-applications` (
   `status` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Daten für Tabelle `job-applications`
---
-
-INSERT INTO `job-applications` (`fname`, `lname`, `department`, `application`, `comment`, `email`, `website`, `phonenumber`, `ID`, `status`) VALUES
-('Julius', 'Ball', 'marketing', '', '', 'juliusball197@gmail.com', '', '06606149774', 7, 's'),
-('Julius', 'Ball', 'marketing', '', '', 'juliusball197@gmail.com', '', '06606149774', 8, 's'),
-('Julius', 'Ball', 'it', '', 'Im laking experience but im open to learn', 'juliusball197@gmail.com', 'https://www.apple.com', '06606149774', 9, 'm'),
-('Julius', 'Ball', 'it', '', 'LEAD 001', 'juliusball197@gmail.com', 'https://techbird.com/', '06606149774', 10, 'm'),
-('Julius', 'Ball', 'it', '', 'LEAD 001', 'juliusball197@gmail.com', 'https://techbird.com/', '06606149774', 11, 'm'),
-('Julius', 'Ball', 'marketing', '', '', 'juliusball197@gmail.com', '', '06606149774', 12, 's'),
-('Julius', 'Ball', 'marketing', 0x54656b6f2d426f6c642e747466, 'Im laking experience but im open to learn', 'juliusball197@gmail.com', 'https://www.apple.com', '06606149774', 13, 's'),
-('Thomas', 'Sandraberger', 'it', 0x72657365742e706e67, 'Im laking experience but im open to learn', 'thomas@sandraberger.rennweg', 'https://www.apple.com', '+4366488502442', 14, 'm'),
-('Hansi', 'Hinterseher', 'marketing', 0x736f756e642d776176652e706e67, '', 'Hansi@gmail.com', '', '+4366488502442', 15, 'm'),
-('Samuel', 'Seebacher', 'pam', '', 'Bin da Seebsam', 'seebachs@htl-villach.at', 'https://www.seebachs.com', '2309488493', 16, 'm'),
-('Sandra', 'Seebacher', 'mrac', '', 'FC FC RENNWEG', 'sandra@fc-rennweg.com', 'https://fc-rennweg.at', '293874523', 17, 'm'),
-('Jannis', 'Waldner', 'sm', '', 'Seas', 'wldner@gmail.com', '', '23470234879', 18, 's'),
-('Samuel', 'Seebacher', 'it', '', 'Seas ia geilen Säcke', 'samuelseebacher007@gmail.com', '', '06607046777', 19, 'u'),
-('Noah', 'Seebacher', 'mrac', '', 'Bin Samuel sei Bruada', 'noahseeb@gmail.com', '', '3427834827234', 20, 'u'),
-('Samuel', 'Ramsbacher', 'sales', '', 'Hey wie gehts', 'samuel.ramsbacher02@gmail.com', 'http://172.28.8.175/techbird/php/job-entry.php?', '133', 21, 'u'),
-('Monika', 'Roessler', 'marketing', 0x426c7565537461636b73496e7374616c6c65725f352e31312e35302e323130325f6e61746976655f61316162326333653234363332373131373162633666303733313336343763385f4d4473314c444d374d5455734d5473784e5377304f7a45312e657865, '', 'mroessler@gmc.at', '', '2478324780', 22, 's'),
-('Jannik', 'Seewalder', 'pam', '', 'moin diggi hi', 'jannik.seewald@aon.at', 'http://172.28.8.175/techbird/php/job-entry.php?', '144', 23, 'u'),
-('Michaella', 'Steindl', 'sm', '', 'Mathelehrer', 'stendl@edu.htl-villach.at', '', '29374834827', 24, 's'),
-('Albert', 'Fingernoodle', 'design', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, 'I fucking hate em bick black monkey', 'ichsageuchdochnichtmeineemail@ihridioten.com', 'https://testsite.com', '0696966969', 25, 'm'),
-('Adolf', 'Schickelgruber', 'pam', '', 'I dont like Juice', 'adi123@gmail.com', 'https://GasGmBH.de', '0677 891279872', 26, 'u'),
-('Johan', 'Nussfeld III', 'cs', '', 'Ich bin hungrig', 'jannussnuss@gmail.com', 'https://essenmachtfroh.at', '0677 91287398', 27, 'm'),
-('Horst', 'Harteichel', 'pam', 0x626577657262756e6730312e706466, 'Bitte ich brauche den Job', 'horst.harteichel@gmail.com', 'https://www.google.com/', '+4366942018769', 28, 'm'),
-('Enrico', 'Fercher', 'design', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, 'My Dad beats me everyday. He is 7000 years old and has every diessease known to man and the ones unknown', 'enricosAVictim@hisDad.com', 'https://website.org', '42042069', 29, 's'),
-('Enrico', 'Fercher', 'design', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, 'My Dad beats me everyday. He is 7000 years old and has every diessease known to man and the ones unknown', 'enricosAVictim@hisDad.com', 'https://website.org', '42042069', 30, 's'),
-('asd', 'sdf', 'marketing', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, '', 'sdfghgfds@email.com', 'https://www.help1.com', 'a', 31, 's'),
-('asd', 'sdf', 'marketing', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, '', 'sdfghgfds@email.com', 'https://www.help1.com', 'a', 32, 's'),
-('asd', 'sdf', 'marketing', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, '', 'sdfghgfds@email.com', 'https://www.help1.com', 'a', 33, 'm'),
-('xcvb', 'dfg', 'marketing', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, '', 'a@gmail.com', 'https://www.help3.com', 'e3456', 35, 's'),
-('xcvb', 'cvb', 'marketing', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, '', 'a@gmail.com', 'https://www.help4.com', '4567', 36, 's'),
-('dfghj', 'sdfghj', 'marketing', 0x692d776f6b652d75702d696e2d612d6e65772d627567617474692d42792d74756e612e766f6963656d6f642e6e65742e6d7033, '', 'a@gmail.com', 'https://www.helsdfgfrdcfvgres.com', '345', 38, 'u'),
-('Judius', 'Boall', 'marketing', '', 'Alles billig', 'safi_legend@aon.pk', 'http://172.28.8.175/techbird/php/job-entry.php?', '1', 40, 'm'),
-('Safi', 'Mujmbaij', 'it', '', 'moin meister', 'safimumbaji@smet.at', 'http://172.28.8.175/techbird/php/job-entry.php?', '99', 41, 'm'),
-('Shrek', 'Nigga', 'cs', '', 'I like shoving footlongs of meat in my mouth', 'ShrekLovesCock@gmail.dick', 'https://gayNiggaPorn.at', '69696969696969', 42, 'u'),
-('Israel', 'Ball', 'cs', '', 'ui', 'israel@jew.is', 'http://172.28.8.175/techbird/php/job-entry.php?', '23', 43, 's'),
-('Ethan', 'Anderson', 'design', '', '', 'ethan.anderson@example.com', 'https://rom.com', '01928398291', 44, 'u'),
-('Olivia', 'Bennett', 'marketing', '', '', 'olivia.bennett@example.com', 'https://rom.com', '92438927948', 45, 'u'),
-('Liam', 'Carter', 'cs', '', '', 'liam.carter@example.com', 'https://rom.com', '8979821738812', 46, 's'),
-('Sophia', 'Davis', 'it', '', '', 'sophia.davis@example.com', 'https://rom.com', '98798273871828', 47, 'u'),
-('Noah', 'Edwards', 'pam', '', '', 'noah.edwards@example.com', 'https://rom.com', '989827138927', 48, 'u'),
-('Ava', 'Foster', 'sales', '', '', 'ava.foster@example.com', 'https://rom.com', '98728379187238', 49, 'u'),
-('Lucas', 'Grayson', 'sm', '', '', 'lucas.grayson@example.com', 'https://rom.com', '979721978328712', 50, 'u'),
-('Mia', 'Harrison', 'it', '', '', 'mia.harrison@example.com', 'https://rom.com', '2312837213221', 51, 'u'),
-('Oliver', 'Ingram', 'design', '', '', 'oliver.ingram@example.com', 'https://rom.com', '2637165263716253', 52, 'u'),
-('Amelia', 'Johnson', 'pam', '', '', 'amelia.johnson@example.com', 'https://rom.com', '213213726831672', 53, 'u'),
-('Elijah', 'Kennedy', 'cs', '', '', 'elijah.kennedy@example.com', 'https://rom.com', '78628736817263', 54, 'u'),
-('Charlotte', 'Lawson', 'pam', '', '', 'charlotte.lawson@example.com', 'https://rom.com', '12354534536323', 55, 'u'),
-('Saadn Idn Abdelaziz Ibn Ali Ismael Shik Shak Shok Balla', 'Mohammad Abdallah', 'cs', 0x70616b692e6a666966, 'boooooooooooom', 'boombomm@gmail.com', 'https://poki.com/en/g/blumgi-castle', '666666666', 56, 'm'),
-('Aiden', 'Mitchell', 'design', '', 'enjoy your day', 'aiden.mitchell@example.com', 'https://rom.com', '123535323443', 57, 'u'),
-('Harper', 'Nelson', 'mrac', '', 'enjoy your day', 'harper.nelson@example.com', 'https://rom.com', '32464354534236', 58, 'u'),
-('Benjamin', 'Owens', 'design', '', 'enjoy your day', 'benjamin.owens@example.com', 'https://rom.com', '1233453454323', 59, 'u'),
-('Emily', 'Parker', 'sm', '', 'enjoy your day', 'emily.parker@example.com', 'https://rom.com', '234762734687233', 60, 'u'),
-('Henry', 'Quinn', 'sm', '', 'enjoy your day', 'henry.quinn@example.com', 'https://rom.com', '752713657662212', 61, 'u'),
-('Abigail', 'Reynolds', 'mrac', '', 'enjoy your day', 'abigail.reynolds@example.com', 'https://rom.com', '871632876712322', 62, 'u'),
-('James', 'Simmons', 'sm', '', 'enjoy your day', 'james.simmons@example.com', 'https://rom.com', '7126387676231232', 63, 'u'),
-('Elizabeth', 'Thompson', 'it', '', 'enjoy your day', 'elizabeth.thompson@example.com', 'https://rom.com', '9729837987123883', 64, 'u'),
-('Alexander', 'Turner', 'pam', '', '⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿\r\n⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢺⣿\r\n⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠜⣿\r\n⣿⣿⣿⣿⠿⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿\r\n⣿⣿⡏⠁⠀⠀⠀⠀⠀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣦⣤⡄⠀⠀⠀⠀⢀⣴⣿\r\n⣿⣿⣷⣄⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡧⠇⢀⣤⣶\r\n⣿⣿⣿⣿⣿⣿⣾⣮⣭⣿⡻⣽⣒⠀⣤⣜⣭⠐⢐⣒⠢⢰\r\n⣿⣿⣿⣿⣿⣿⣿⣏⣿⣿⣿⣿⣿⣿⡟⣾⣿⠂⢈⢿⣷⣞\r\n⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣷⣶⣾⡿⠿⣿⠗⠈⢻⣿\r\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠻⠋⠉⠑⠀⠀⢘⢻\r\n⣿⣿⣿⣿⣿⣿⣿⡿⠟⢹⣿⣿⡇⢀⣶⣶⠴⠶⠀⠀⢽\r\n⣿⣿⣿⣿⣿⣿⡿⠀⠀⢸⣿⣿⠀⠀⠣⠀⠀⠀⠀⠀⡟⢿⣿\r\n⣿⣿⣿⡿⠟⠋⠀⠀⠀⠀⠹⣿⣧⣀⠀⠀⠀⠀⡀⣴⠁⢘⡙\r\n⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⠗⠂⠄⠀⣴⡟⠀⠀⡃', 'alexander.turner@example.com', 'https://rom.com', '9873498738974', 65, 'm'),
-('William', 'Young', 'pam', '', 'function addToArray(arrayWithRainfall, rainfall) {\r\n  arrayWithRainfall.push(rainfall);\r\n}\r\n\r\nfunction isWithinRange(rainfall) {\r\n  if(rainfall &gt;= 0 &amp;&amp; rainfall &lt;= 80 &amp;&amp; rainfall != &#039;&#039;) {\r\n    return true;\r\n  }\r\n}\r\n\r\nfunction calcSmallerThan(arrayWithRainfall, input) {\r\n  let counter = 0;\r\n  for(let i = 0; i &lt; arrayWithRainfall.length; i++){\r\n    if(arrayWithRainfall[i] &lt;= input){\r\n      counter++;\r\n    }\r\n  }\r\n  return counter;\r\n}\r\n\r\nfunction getAverageRainfall(arrayWithRainfall, sum) {\r\n  for(let i = 0; i &lt; arrayWithRainfall.length; i++){\r\n    sum+=Number(arrayWithRainfall[i]);\r\n  }\r\n  return sum / arrayWithRainfall.length;\r\n}\r\n\r\nfunction addBiggerThan(arrayWithRainfall, input, biggerThanArray) {\r\n  for(let i = 0; i &lt; arrayWithRainfall.length; i++){\r\n    if(arrayWithRainfall[i] &gt; input){\r\n      biggerThanArray.push(arrayWithRainfall[i]);\r\n    }\r\n  }\r\n}\r\n\r\n\r\nlet myRainFallArray = [];\r\nlet biggerThanArray = [];\r\nlet rainfall;\r\nlet input;\r\nlet sum = 0;\r\n\r\n\r\ndo {\r\n  rainfall = prompt(&#039;Niederschlagsmenge zwischen 0 und 80:&#039;);\r\n  if(isWithinRange(rainfall) != true){\r\n    alert(&#039;Eingegebener Wert entsprichet nicht den Vorgaben&#039;);\r\n  } else {\r\n    addToArray(myRainFallArray, rainfall);\r\n  }\r\n} while(myRainFallArray.length &lt; 10);\r\n\r\ndo {\r\n  input = prompt(&#039;Wert zwischen 0 und 80:&#039;);\r\n  if(isWithinRange(input) != true){\r\n    alert(&#039;Eingegebener Wert entsprichet nicht den Vorgaben&#039;);\r\n  } else {\r\n    calcSmallerThan(myRainFallArray, input);\r\n  }\r\n}while(isWithinRange(input) != true);\r\n\r\ndocument.write(&#039;&lt;p&gt;&#039; + &#039;Es gibt &#039; + calcSmallerThan(myRainFallArray, input) + &#039; Werte die kleiner oder gleich als &#039; + input + &#039; sind&lt;p&gt;&#039;);\r\n\r\ndocument.write(&#039;&lt;p&gt;&#039; + &#039;Der Durchschnitt betägt: &#039; + getAverageRainfall(myRainFallArray, sum) + &#039;&lt;p&gt;&#039;);\r\n\r\naddBiggerThan(myRainFallArray, input, biggerThanArray);\r\n\r\nif(biggerThanArray != &#039;&#039;) {\r\n  document.write(&#039;&lt;p&gt;&#039; + &#039;Die Werte &#039; + biggerThanArray + &#039; sind gröser als &#039; + input + &#039;&lt;p&gt;&#039;);\r\n} else {\r\n  document.write(&#039;&lt;p&gt;&#039; + &#039;Es gibt keine Werte die gröser als &#039; + input + &#039; sind&lt;p&gt;&#039;);\r\n}', 'william.young@example.com', 'https://rom.com', '92374986268346', 67, 'u'),
-('Grace', 'Adams', 'it', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'grace.adams@example.com', 'https://rom.com', '823749825652346', 68, 'u'),
-('Michael', 'Baker', 'mrac', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'michael.baker@example.com', 'https://rom.com', '872364872683746', 69, 'u'),
-('Lily', 'Collins', 'design', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'lily.collins@example.com', 'https://rom.com', '82734986267354', 70, 'u'),
-('Daniel', 'Dixon', 'mrac', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'daniel.dixon@example.com', 'https://rom.com', '298364762499', 71, 'u'),
-('Victoria', 'Evans', 'pam', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'victoria.evans@example.com', 'https://rom.com', '9283749628374', 72, 'u'),
-('Matthew', 'Fisher', 'sm', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'matthew.fisher@example.com', 'https://rom.com', '987293847837284', 73, 'u'),
-('Madison', 'Green', 'marketing', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'madison.green@example.com', 'https://rom.com', '289374982374983', 74, 'u'),
-('Samuel', 'Hayes', 'sm', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'samuel.hayes@example.com', 'https://rom.com', '982374623433', 75, 'u'),
-('Addison', 'Jenkins', 'marketing', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'addison.jenkins@example.com', 'https://rom.com', '982734987324823', 76, 'u'),
-('David', 'King', 'it', '', '', 'david.king@example.com', 'https://rom.com', '9238478723647', 77, 'u'),
-('Natalie', 'Lewis', 'it', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'natalie.lewis@example.com', 'https://rom.com', '82635476236437', 78, 'u'),
-('Christopher', 'Moore', 'it', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'christopher.moore@example.com', 'https://rom.com', '982635472354', 79, 'u'),
-('Brooklyn', 'Myers', 'marketing', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'brooklyn.myers@example.com', 'https://rom.com', '987982734873', 80, 'u'),
-('Andrew', 'Nelson', 'marketing', '', 'Holy fucking shit i cant hold it anymore I busted 20 nuts to her already i love her so much hogwarts legacy gave me a reason to live my cock is about to explode every time i see garlick just busted fucking fattest nut in my entire life to her i want to marry her and suck her nipps daily i wanna fuck her every day and cum deep inside her holy shit you have no fucking idea how horny i am for her', 'andrew.nelson@example.com', 'https://rom.com', '573289465637', 81, 'u');
-
 -- --------------------------------------------------------
 
 --
@@ -212,7 +135,56 @@ CREATE TABLE `jobs` (
 --
 
 INSERT INTO `jobs` (`jobnameen`, `descriptionen`, `employmenten`, `ID`, `jobnamede`, `descriptionde`, `employmentde`, `jobnameit`, `descriptionit`, `employmentit`) VALUES
-('Backend Developer', 'We are looking for a backend developer who has deep knowlage in sql, php and ruby on rials', 'Fulltime', 25, 'Backend Developer', 'Wir suchen nach einem Backend-Entwickler, der über eine fundierte Kenntnisse in SQL, PHP und Ruby verfügt\r\n', 'Vollzeit', 'Sviluppatore back-end\r\n', 'Backend Developer', 'Backend Developer');
+('Backend Developer', 'Backend Developer', 'Backend Developer', 31, 'Backend Developer', 'Wir suchen einen erfahrenden Backend developer', 'Vollzeit', 'Sviluppatore back-end\r\n', 'Stiamo cercando uno sviluppatore backend con una solida conoscenza di SQL, PHP e Ruby\r\n', 'tempo pieno\r\n'),
+('Frontend Developer', 'Frontend Developer', 'Frontend Developer', 39, 'Frontend Developer', 'Wir suchen nach einem Frontend Developer, der über eine fundierte Kenntnisse in SQL, PHP und Ruby verfügt\r\n', 'Vollzeit', 'Sviluppatore front-end\r\n', 'Stiamo cercando uno sviluppatore backend con una solida conoscenza di SQL, PHP e Ruby\r\n', 'tempo pieno\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `presentationusers`
+--
+
+CREATE TABLE `presentationusers` (
+  `ID` int(11) NOT NULL,
+  `username` text NOT NULL,
+  `password` text NOT NULL,
+  `permission` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `presentationusers`
+--
+
+INSERT INTO `presentationusers` (`ID`, `username`, `password`, `permission`) VALUES
+(1, '2BHITMN', 'ITP202223', '');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `resources`
+--
+
+CREATE TABLE `resources` (
+  `ID` int(11) NOT NULL,
+  `type` text NOT NULL,
+  `title` text NOT NULL,
+  `link` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `resources`
+--
+
+INSERT INTO `resources` (`ID`, `type`, `title`, `link`) VALUES
+(1, 'git', 'Github Project', 'https://github.com/balljul/TECHBIRD-HOMEPAGE'),
+(2, 'git', 'XD-Designs', 'https://github.com/balljul/TECHBIRD-HOMEPAGE/tree/main/XD%20Designs'),
+(3, 'git', 'Styleguide', 'https://github.com/balljul/TECHBIRD-HOMEPAGE/blob/main/Styleguide/TECHBIRD%20Styleguide%20by%20Julius%20Ball.pdf'),
+(4, 'code', 'Main Stylesheet', 'https://github.com/balljul/TECHBIRD-HOMEPAGE/blob/main/css/styles.less'),
+(5, 'pdf', 'Color-Palette', 'https://github.com/balljul/TECHBIRD-HOMEPAGE/blob/main/Styleguide/TECHBIRD%20Styleguide%20by%20Julius%20Ball.pdf#page=32'),
+(6, 'code', 'Color Palette', 'https://github.com/balljul/TECHBIRD-HOMEPAGE/blob/main/css/colors.less'),
+(7, 'webtool', 'IMG to ASCII', 'https://manytools.org/hacker-tools/convert-images-to-ascii-art/'),
+(8, 'webtool', 'Icons', 'https://www.flaticon.com/'),
+(9, 'webtool', 'Images', 'https://www.freepik.com/');
 
 -- --------------------------------------------------------
 
@@ -281,7 +253,7 @@ INSERT INTO `texts` (`textkey`, `en`, `de`, `it`, `Page`, `ID`) VALUES
 ('TECHBIRD_PARTNERS_CONTENT01_03', 'GREAT', 'GROSSARTIGE', 'GRANDE', 'PARTNERS', 45),
 ('TECHBIRD_PARTNERS_CONTENT01_04', 'CUSTOMERS', 'KUNDEN', 'CLIENTI', 'PARTNERS', 46),
 ('TECHBIRD_PARTNERS_CONTENT01_05', 'GROWTH', 'WACHSTUM', 'CRESCITA', 'PARTNERS', 47),
-('TECHBIRD_NAVBAR_HISTORY', 'HISTORY', 'GESCHICHT', 'STORIA', 'NAVBAR', 48),
+('TECHBIRD_NAVBAR_HISTORY', 'HISTORY', 'GESCHICHTE', 'STORIA', 'NAVBAR', 48),
 ('TECHBIRD_NAVBAR_LOCATIONS', 'LOCATIONS', 'FIRMENSITZE', 'SEDE CENTRALE', 'NAVBAR', 49),
 ('TECHBIRD_NAVBAR_PARTNERS', 'CUSTOMERS', 'KUNDEN', 'CLIENTI', 'NAVBAR', 50),
 ('TECHBIRD_NAVBAR_EMPLOYESS', 'EMPLOYEES', 'MITARBEITER', 'DIPENDENTI', 'NAVBAR', 51),
@@ -308,7 +280,64 @@ INSERT INTO `texts` (`textkey`, `en`, `de`, `it`, `Page`, `ID`) VALUES
 ('TECHBIRD_IMPRINT_TITLE', 'Imprint', 'Impressum', 'impronta', 'IMPRINT', 72),
 ('TECHBIRD_COPYRIGHT_TITLE', 'Copyright', 'Datenschutz', 'Diritto d\'autore\r\n', 'COPYRIGHT', 73),
 ('TECHBIRD_CONTACT_INFOS_TITLE', 'Contact', 'Kontakt', 'contatto', 'CONTACT INFOS', 74),
-('TECHBIRD_PARTNERS_CONTACT_BUTTON', 'Contact us', 'Kontaktiere uns', 'Contattaci\r\n', 'PARTNERS', 75);
+('TECHBIRD_PARTNERS_CONTACT_BUTTON', 'Contact us', 'Kontaktiere uns', 'Contattaci\r\n', 'PARTNERS', 75),
+('TECHBIRD_IMPRINT_TEXT_01', 'Information according to the information obligation according to §5 E-Commerce Act, §14 Business Code, §63 Commercial Code and disclosure obligation according to §25 Media Act.', 'Angaben gemäß Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.\r\n', 'Informazioni secondo l\'obbligo di informazione ai sensi del §5 Legge sul commercio elettronico, §14 Codice commerciale, §63 Codice commerciale e obbligo di divulgazione ai sensi del §25 Legge sui media.', 'IMPRINT', 76),
+('TECHBIRD_IMPRINT_TEXT_02', 'TECHBIRD', 'TECHBIRD', 'TECHBIRD', 'IMPRINT', 77),
+('TECHBIRD_IMPRINT_TEXT_03', 'RINGSTRAßE 199,\r\n', 'RINGSTRAßE 199,\r\n', 'RINGSTRAßE 199,\r\n', 'IMPRINT', 78),
+('TECHBIRD_IMPRINT_TEXT_04', '1010 Wien, Innere Stadt\r\n', '1010 Wien, Innere Stadt\r\n', '1010 Wien, Innere Stadt\r\n', 'IMPRINT', 79),
+('TECHBIRD_IMPRINT_TEXT_05', 'Object of the company: ', 'Unternehmensgegenstand:', 'Oggetto della società:', 'IMPRINT', 80),
+('TECHBIRD_IMPRINT_TEXT_06', 'IT services', 'IT-Dienstleistungen', 'servizi informatici', 'IMPRINT', 81),
+('TECHBIRD_IMPRINT_TEXT_07', 'VAT number:', 'UID-Nummer:', 'Partita IVA: ', 'IMPRINT', 82),
+('TECHBIRD_IMPRINT_TEXT_08', 'ATU12345678', 'ATU12345678', 'ATU12345678', 'IMPRINT', 83),
+('TECHBIRD_IMPRINT_TEXT_09', 'GLN: 128973562', 'GLN: 128973562\r\n', 'GLN: 128973562', 'IMPRINT', 84),
+('TECHBIRD_IMPRINT_TEXT_10', 'GISA: 56836294', 'GISA: 56836294\r\n', 'GISA: 56836294', 'IMPRINT', 85),
+('TECHBIRD_IMPRINT_TEXT_11', 'Company registration number:', 'Firmenbuchnummer:\r\n', 'Numero di registrazione della società:', 'IMPRINT', 86),
+('TECHBIRD_IMPRINT_TEXT_12', 'Company register court:', 'Firmenbuchgericht:\r\n', 'Tribunale del registro delle imprese:', 'IMPRINT', 87),
+('TECHBIRD_IMPRINT_TEXT_13', 'Headquarters:', 'Firmensitz:\r\n', 'Sede centrale:', 'IMPRINT', 88),
+('TECHBIRD_IMPRINT_TEXT_14', 'Phone: +43 660 6149774', 'Tel.: +43 660 6149774\r\n', 'Telefono: +43 660 6149774', 'IMPRINT', 89),
+('TECHBIRD_IMPRINT_TEXT_15', 'Fax.: 6238 / 23847', 'Fax.: 6238 / 23847\r\n', 'Fax.: 6238 / 23847', 'IMPRINT', 90),
+('TECHBIRD_IMPRINT_TEXT_16', 'Email: office@techbird.at', 'E-Mail: office@techbird.at\r\n', 'E-mail: office@techbird.at', 'IMPRINT', 91),
+('TECHBIRD_IMPRINT_TEXT_17', 'Management: Julius Ball', 'Geschäftsführung: Julius Ball\r\n', 'Gestione: Julius Ball', 'IMPRINT', 92),
+('TECHBIRD_IMPRINT_TEXT_18', 'Copyright: Samuel Seebacher', 'Datenschutzverantwortlicher: Samuel Seebacher\r\n\r\n', 'Responsabile della protezione dei dati: Samuel Seebacher', 'IMPRINT', 93),
+('TECHBIRD_COPYRIGHT_TEXT_01', 'We attach great importance to the protection of your personal data and comply with the applicable data protection laws. In the following we will inform you about what data is collected when you use our website and how we deal with it.', 'Wir legen großen Wert auf den Schutz deiner persönlichen Daten und halten uns an die geltenden Datenschutzgesetze. Im Folgenden informieren wir dich darüber, welche Daten bei der Nutzung unserer Website erfasst werden und wie wir damit umgehen.', 'Attribuiamo grande importanza alla protezione dei vostri dati personali e rispettiamo le leggi sulla protezione dei dati applicabili. Di seguito vi informeremo su quali dati vengono raccolti quando utilizzate il nostro sito web e su come li trattiamo.', 'COPYRIGHT', 94),
+('TECHBIRD_COPYRIGHT_SUBTITLE_01', 'No use of cookies or similar technologies', 'Keine Verwendung von Cookies oder ähnlichen Technologien', 'Nessun uso di cookie o tecnologie simili', 'COPYRIGHT', 95),
+('TECHBIRD_COPYRIGHT_TEXT_02', 'We do not use cookies or similar technologies on our website. No data is stored or collected on your device.', 'Wir verwenden keine Cookies oder ähnliche Technologien auf unserer Website. Es werden keine Daten auf deinem Gerät gespeichert oder gesammelt.', ' Non utilizziamo cookie o tecnologie simili sul nostro sito web. Nessun dato viene memorizzato o raccolto sul tuo dispositivo.', 'COPYRIGHT', 96),
+('TECHBIRD_COPYRIGHT_SUBTITLE_02', 'Using PHP sessions', 'Verwendung von PHP Sessions', 'Utilizzo di sessioni PHP', 'COPYRIGHT', 97),
+('TECHBIRD_COPYRIGHT_TEXT_03', 'We use PHP sessions to facilitate the interaction between your browser and our website. No data is permanently stored on your device. The session ends automatically as soon as you close your browser.', 'Wir nutzen PHP Sessions, um die Interaktion zwischen deinem Browser und unserer Website zu erleichtern. Dabei werden keine Daten dauerhaft auf deinem Gerät gespeichert. Die Session wird automatisch beendet, sobald du deinen Browser schließt.\r\n', 'Utilizziamo sessioni PHP per facilitare l\'interazione tra il tuo browser e il nostro sito web. Nessun dato viene memorizzato in modo permanente sul tuo dispositivo. La sessione termina automaticamente non appena chiudi il browser.', 'COPYRIGHT', 98),
+('TECHBIRD_COPYRIGHT_SUBTITLE_03', 'Use of images and icons', 'Verwendung von Bildern und Icons', 'Uso di immagini e icone', 'COPYRIGHT', 99),
+('TECHBIRD_COPYRIGHT_TEXT_04', 'All images and icons used on our website are either our own creations or are subject to the respective copyright regulations. We own all necessary rights to the images and icons used.', 'Alle auf unserer Website verwendeten Bilder und Icons sind entweder eigene Kreationen oder unterliegen den jeweiligen Urheberrechtsbestimmungen. Wir besitzen alle notwendigen Rechte an den verwendeten Bildern und Icons.', 'Tutte le immagini e le icone utilizzate sul nostro sito Web sono nostre creazioni o sono soggette alle rispettive normative sul copyright. Possediamo tutti i diritti necessari per le immagini e le icone utilizzate.', 'COPYRIGHT', 100),
+('TECHBIRD_COPYRIGHT_SUBTITLE_04', 'Contact', 'Kontakt', 'Contatto', 'COPYRIGHT', 101),
+('TECHBIRD_COPYRIGHT_TEXT_05', 'If you have any questions about data protection on our website, please feel free to contact us. You can find our contact details in the imprint.', 'Falls du Fragen zum Datenschutz auf unserer Website hast, kannst du uns gerne kontaktieren. Unsere Kontaktdaten findest du im Impressum.\r\n', 'In caso di domande sulla protezione dei dati sul nostro sito Web, non esitate a contattarci. Puoi trovare i nostri dati di contatto nell\'impronta.', 'COPYRIGHT', 102),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_01', 'Generally', 'Generell', 'Generalmente', 'CONTACT-INFOS', 103),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_02', 'Barcelona', 'Barcelona', 'Barcellona', 'CONTACT-INFOS', 104),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_03', 'Berlin', 'Berlin', 'Berlino', 'CONTACT-INFOS', 105),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_04', 'Bern', 'Bern', 'Berna', 'CONTACT-INFOS', 106),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_05', 'Brussels', 'Brüssel', 'Bruxelles', 'CONTACT-INFOS', 107),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_06', 'Helsinki', 'Helsinki', 'Helsinki', 'CONTACT-INFOS', 108),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_07', 'Lisbon', 'Lisabon', 'Lisbona', 'CONTACT-INFOS', 109),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_08', 'London', 'London', 'Londra', 'CONTACT-INFOS', 110),
+('TECHBIRD_CONTACT_INFOS_SUBTITLE_09', 'Roma', 'Rom', 'Roma', 'CONTACT-INFOS', 111);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `users`
+--
+
+CREATE TABLE `users` (
+  `username` text NOT NULL,
+  `password` text NOT NULL,
+  `permission` text NOT NULL,
+  `ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `users`
+--
+
+INSERT INTO `users` (`username`, `password`, `permission`, `ID`) VALUES
+('ballj', 'pw1234', 'admin', 1),
+('admin', 'admin', 'admin', 2);
 
 --
 -- Indizes der exportierten Tabellen
@@ -345,9 +374,27 @@ ALTER TABLE `jobs`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indizes für die Tabelle `presentationusers`
+--
+ALTER TABLE `presentationusers`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indizes für die Tabelle `resources`
+--
+ALTER TABLE `resources`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indizes für die Tabelle `texts`
 --
 ALTER TABLE `texts`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indizes für die Tabelle `users`
+--
+ALTER TABLE `users`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -376,19 +423,37 @@ ALTER TABLE `employees`
 -- AUTO_INCREMENT für Tabelle `job-applications`
 --
 ALTER TABLE `job-applications`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
 -- AUTO_INCREMENT für Tabelle `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- AUTO_INCREMENT für Tabelle `presentationusers`
+--
+ALTER TABLE `presentationusers`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT für Tabelle `resources`
+--
+ALTER TABLE `resources`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT für Tabelle `texts`
 --
 ALTER TABLE `texts`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
+
+--
+-- AUTO_INCREMENT für Tabelle `users`
+--
+ALTER TABLE `users`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

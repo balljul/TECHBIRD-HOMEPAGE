@@ -1,7 +1,5 @@
 <?php
 
-
-
 function retrieveText($sql){
     include 'connect.php';
     $data = $conn->query($sql);

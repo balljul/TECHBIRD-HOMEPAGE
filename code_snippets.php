@@ -4,10 +4,12 @@
 
 basename($_SERVER["SCRIPT_FILENAME"], '.php');
 
-// TO toogle a page reload do the following
-
+// To toogle a page reload do the following
 header('Refresh:0"');
 
+// To redirecct to another page do the following
+
+header("LOCATION: path")
 
 
 

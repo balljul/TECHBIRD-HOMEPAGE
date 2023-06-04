@@ -46,6 +46,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
+    <link rel="icon" href="../img/Logo/Logo Designs TECHBIRD/Icon only.svg">
     <title>Jobs</title>
 </head>
 <body class="jobs-container ">
@@ -55,7 +56,7 @@
     ?>
 
     <div class="jobs-entry-text center text-center bg-job-entry-text">
-        <img src="../img/Headers/Jobs-Header.png" alt="">
+        <img src="../img/Headers/Jobs-Header-<?php echo $_SESSION['lang']; ?>.png" alt="">
     </div>
 
   <div class="job-offers-container">

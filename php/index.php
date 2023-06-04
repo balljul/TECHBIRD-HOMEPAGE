@@ -48,9 +48,10 @@ require 'sessionStart.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
-    
+    <link rel="icon" href="../img/Logo/Logo Designs TECHBIRD/Icon only.svg">    
     <title>Techbird Home</title>
 </head>
+
 <body>
 
 <?php
@@ -79,12 +80,12 @@ require 'sessionStart.php';
 
 
 <div class="image-nav-home ">
-    <div class="image-nav-home-item"><a href="history.php"><img src="../img/Headers/History-Header.svg" alt=""></a></div>
-    <div class="image-nav-home-item"><a href="employees.php"><img src="../img/Headers/Employees-Header.png" alt=""></a></div>
-    <div class="image-nav-home-item"><a href="locations.php"><img src="../img/Headers/Locations-Header.jpg" alt=""></a></div>
-    <div class="image-nav-home-item"><a href="social-media.php"><img src="../img/Headers/Social Media Header.png" alt=""></a></div>
-    <div class="image-nav-home-item"><a href="partners.php"><img src="../img/Headers/Partners-Header.png" alt=""></a></div>
-    <div class="image-nav-home-item"><a href="jobs.php"><img src="../img/Headers/Jobs-Header.png" alt=""></a></div>
+    <div class="image-nav-home-item"><a href="history.php"><img src="../img/Headers/History-Header-<?php echo $_SESSION['lang']; ?>.png" alt=""></a></div>
+    <div class="image-nav-home-item"><a href="employees.php"><img src="../img/Headers/Employees-Header-<?php echo $_SESSION['lang']; ?>.png" alt=""></a></div>
+    <div class="image-nav-home-item"><a href="locations.php"><img src="../img/Headers/Locations-Header-<?php echo $_SESSION['lang']; ?>.png" alt=""></a></div>
+    <div class="image-nav-home-item"><a href="social-media.php"><img src="../img/Headers/SocialMedia-Header-<?php echo $_SESSION['lang']; ?>.png" alt=""></a></div>
+    <div class="image-nav-home-item"><a href="partners.php"><img src="../img/Headers/Customers-Header-<?php echo $_SESSION['lang']; ?>.png" alt=""></a></div>
+    <div class="image-nav-home-item"><a href="jobs.php"><img src="../img/Headers/Jobs-Header-<?php echo $_SESSION['lang']; ?>.png" alt=""></a></div>
 
 </div>
  

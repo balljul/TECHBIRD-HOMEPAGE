@@ -46,6 +46,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../fonts/Teko Webfont/stylesheet.css">
+    <link rel="icon" href="../img/Logo/Logo Designs TECHBIRD/Icon only.svg">
     <title>Social Media</title>
 </head>
 <body class="sm-container bg-light">
@@ -66,12 +67,12 @@
     </h1></div>
 
     <div class="social-media-icons icon">
-        <a class="hover-element-link" href="https://facebook.com/"><img src="../img/icons/Social Media Icons/facebook.png" alt="Error"></a>
+        <a class="hover-element-link" href="https://www.facebook.com/people/Techbird-Austria/pfbid0s4QKdfG3fX73kMT8bXUM8pLGPA4zMQ4arSL5QQmD3gVZNiNYToLJnSWgaMbsZTzxl/"><img src="../img/icons/Social Media Icons/facebook.png" alt="Error"></a>
         <a class="hover-element-link" href="https://github.com/balljul/TECHBIRD-HOMEPAGE"><img src="../img/icons/Social Media Icons/github.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://linkedin.com/"><img src="../img/icons/Social Media Icons/linkedin.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://telegram.com/"><img src="../img/icons/Social Media Icons/instagram.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://twitter.com/"><img src="../img/icons/Social Media Icons/twitter.png" alt="Error"></a>
-        <a class="hover-element-link" href="https://youtube.com/"><img src="../img/icons/Social Media Icons/youtube.png" alt="Error"></a>
+        <a class="hover-element-link" href="https://www.linkedin.com/in/techbird-austria-b68774279/"><img src="../img/icons/Social Media Icons/linkedin.png" alt="Error"></a>
+        <a class="hover-element-link" href="https://www.instagram.com/techbird_austria/"><img src="../img/icons/Social Media Icons/instagram.png" alt="Error"></a>
+        <a class="hover-element-link" href="https://twitter.com/TechbirdAustria"><img src="../img/icons/Social Media Icons/twitter.png" alt="Error"></a>
+        <a class="hover-element-link" href="https://www.youtube.com/channel/UCzjnWgfwJ09l5DkJ1gBIkyA"><img src="../img/icons/Social Media Icons/youtube.png" alt="Error"></a>
     </div>
 
     <div class="sm-text full-height bg-social-media-text bg-image">

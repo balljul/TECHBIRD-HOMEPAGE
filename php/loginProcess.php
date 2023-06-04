@@ -3,7 +3,11 @@
 
     $filename = basename($_SERVER["SCRIPT_FILENAME"], '.php');
     $reloadpage = "header('LOCATION: $filename.php')";
-    $sendBackToLogin = "header('LOCATION: login.php')";   
+    $sendBackToLogin = "header('LOCATION: login.php')";  
+    
+    if(!isset($_SESSION['loginStatus'])){
+        $_SESSION['loginStatus'] = FALSE;
+    }
 
     $sqlUsers = "SELECT * FROM `users`";
     $dataUsers = $conn->query($sqlUsers);
@@ -13,7 +17,10 @@
     }
 
     if($filename == 'login'){
-        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if($_SESSION['loginStatus'] === TRUE){
+            header("LOCATION: admin-dash-overview.php");
+        }
+        else if($_SERVER['REQUEST_METHOD'] == 'POST'){
             if(empty($_POST['user']) == TRUE || empty($_POST['password']) == TRUE){
                 $_SESSION['loginError'] = "Either your password or your username were wrong";
                 $_SESSION['loginStatus'] = FALSE;
@@ -47,7 +54,7 @@
     }
     else if($filename !== 'login'){        
         if($_SESSION['loginStatus'] === FALSE){
-            header('LOCATION: login.php');
+            $sendBackToLogin;
         }
 
     }   
